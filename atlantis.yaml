@@ -27,11 +27,11 @@ forcing:
   # The keys will be the names used for the symlinks created in the temporary run
   # directory.
   SS_hydro.nc:
-    link to: /ocean/$USER/Atlantis/salish-sea-atlantis-model/inputs/SS_hydro.nc
+    link to: /ocean/$USER/Atlantis/Physics/Final/SS_hydro_new.nc
   SS_temp.nc:
-    link to: /ocean/$USER/Atlantis/salish-sea-atlantis-model/inputs/SS_temp.nc
+    link to: /ocean/$USER/Atlantis/Physics/Final/SS_temp_new.nc
   SS_salt.nc:
-    link to: /ocean/$USER/Atlantis/salish-sea-atlantis-model/inputs/SS_salt.nc
+    link to: /ocean/$USER/Atlantis/Physics/Final/SS_salt_new.nc
 
 output filename base: outputSalishSea
 
