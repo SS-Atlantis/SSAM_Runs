@@ -1,4 +1,4 @@
 #!/bin/bash
 
-atlantis run ./atlantis.yaml /ocean/rlovindeer/MOAD/analysis-raisha/SSmodel_outputs/40yRun_3yHydro
+atlantis run ./atlantis.yaml /ocean/rlovindeer/MOAD/analysis-raisha/SSmodel_outputs/40yRun_10yHydro
 
