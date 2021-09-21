@@ -2,7 +2,7 @@
 Atlantis Model Run Commands
 ****************************
 
-This is a collection of run description and parameter files for runs for the Salish Sea Atlantis Model.
+This is a collection of run description and parameter files for simulations using the Salish Sea Atlantis Model.
 
 License
 =======
