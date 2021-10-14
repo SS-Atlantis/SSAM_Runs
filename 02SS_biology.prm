@@ -1433,7 +1433,7 @@ k_w_shallow  0.03  Coefficient of background light absorption due to coastal wat
 k_PN         0.0035  Coefficient of light absorption due to particulate matter 0.0035
 k_SED        0.05      Coefficient of light absoption due to sediment. Only used if flagIsEstuary is on.
 k_DON        0.0009  Coefficient of light absorption due DON 0.0009
-k_DL         0.0038  Coefficient of light absorption due to labile detritus 0.0038
+k_DL         0.0019  Coefficient of light absorption due to labile detritus 0.0038
 k_IS         0.05  Basic coefficient of light absorption 0.05
 KIOP_min     4  Minimum level of light adaptation 4
 KIOP_shift   0.25  Minimum rate of shift under light adaptation 0.25
@@ -8044,7 +8044,7 @@ k_trans_BIV 1.0
 k_trans_HCO 0.01
 k_trans_SPH 0.001
 
-k_refDL  5   Reference labile detrit. level in water column (if higher availability to omnivores reduced)
+k_refDL  10   Reference labile detrit. level in water column (if higher availability to omnivores reduced)
 k_refDR  20   Reference refract. detrit. level in water column (if higher availability to omnivores reduced)
 k_refsDL  10000   Reference labile detrit. level in sediments (if higher availability to omnivores reduced)
 
