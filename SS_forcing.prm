@@ -92,6 +92,7 @@ use_stressfiles 0
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 
 use_force_tracers 0
+use_weighted_assim 0
 
 # The number of tracers to search for in the files and the names of those tracers.
 nforceTracers 4
