@@ -124,6 +124,10 @@ mgPAH/m^3 mgPAH/m^3 mgPAH/m^3 mgPAH/m^3
 
 flag_pollutant_impacts 0
 
+flag_contamMortModel       1     Simple model from Laender et al 2008 (1) or compound model from InVitro (0)
+flag_contamInteractModel   0     No contaminant interactions (0), Additive interactions (1), Multiplicative interactions (2), Most limiting contaminant dominates (3)
+flag_contamGrowthModel     2     No growth effects of contaminants (0), InVitro representation (1), logistic model (2)
+
 ################################################
 # List of functional groups (58)
 #	1	Pacific_herring		FHE
