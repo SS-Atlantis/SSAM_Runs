@@ -91,7 +91,7 @@ use_stressfiles 0
 ## ~      Adding contaminant tracers in the model       ~ ##
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 
-use_force_tracers 0
+use_force_tracers 1
 use_weighted_assim 0
 
 # The number of tracers to search for in the files and the names of those tracers.
@@ -101,17 +101,19 @@ Naphthalene Phenanthrene Pyrene Benzo
 
 # Now the actual files. Can have more than one tracer in a file
 Naphthalene_nFiles 1
-Naphthalene0.name /inputs/Atlantis_Oil__dt_3600.nc
+Naphthalene_File0.name contaminants.nc
 Naphthalene_rewind 0
 
 Phenanthrene_nFiles 1
-Phenanthrene0.name /inputs/Atlantis_Oil__dt_3600.nc
+Phenanthrene_File0.name contaminants.nc
 Phenanthrene_rewind 0
 
 Pyrene_nFiles 1
-Pyrene0.name /inputs/Atlantis_Oil__dt_3600.nc
+Pyrene_File0.name contaminants.nc
 Pyrene_rewind 0
 
 Benzo_nFiles 1
-Benzo0.name /inputs/Atlantis_Oil__dt_3600.nc
+Benzo_File0.name contaminants.nc
 Benzo_rewind 0
+
+use_pollutantfiles 0
