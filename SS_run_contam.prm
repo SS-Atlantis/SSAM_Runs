@@ -59,9 +59,9 @@ tburnday      0
 
 title      SalishSea model run
 dt         12 hour     # 12 hour time step
-tstop      365 day      # Stop time after the given period (1822 = 5; 3650=10; 5475=15; 7300=20, 18250 = 50)
+tstop      3650 day      # Stop time after the given period (1822 = 5; 3650=10; 5475=15; 7300=20, 18250 = 50)
 toutstart  0 day       # Output start time
-toutinc    1 day       # Write output with this periodicity: 1yr run = 1 day; 5 year = 30; 20 year = 91 days
+toutinc    60 day       # Write output with this periodicity: 1yr run = 1 day; 5 year = 30; 20 year = 91 days
 toutfinc   60 day     # Write fisheries output with this periodicity
 
 tsumout    60 day     # Write stock state summary with this periodicity; migration debug
@@ -123,10 +123,6 @@ contaminant_units 4
 mgPAH/m^3 mgPAH/m^3 mgPAH/m^3 mgPAH/m^3
 
 flag_pollutant_impacts 0
-
-flag_contamMortModel       1     Simple model from Laender et al 2008 (1) or compound model from InVitro (0)
-flag_contamInteractModel   0     No contaminant interactions (0), Additive interactions (1), Multiplicative interactions (2), Most limiting contaminant dominates (3)
-flag_contamGrowthModel     2     No growth effects of contaminants (0), InVitro representation (1), logistic model (2)
 
 ################################################
 # List of functional groups (58)
