@@ -33,7 +33,8 @@ forcing:
   SS_salt.nc:
     link to: /ocean/$USER/Atlantis/Physics/Final/SS_salt_07-21.nc
   contaminants.nc:
-    link to: /ocean/$USER/Atlantis/salish-sea-atlantis-model/inputs/contam_SSAtlantis_4PAH.nc
+    link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/Atlantis_TurnPoint_20180101_43200_1depth.nc
+    #/ocean/$USER/Atlantis/salish-sea-atlantis-model/inputs/contam_SSAtlantis_4PAH.nc
 output filename base: outputSalishSea
 
 vcs revisions:
