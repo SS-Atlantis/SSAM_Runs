@@ -1,0 +1,2 @@
+# Ignore netcdf initial conditions files
+*.nc
