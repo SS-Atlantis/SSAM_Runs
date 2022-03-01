@@ -36,7 +36,7 @@ forcing:
   SS_salt.nc:
     link to: /ocean/$USER/Atlantis/Physics/Final/SS_salt_07-21.nc
   contaminants.nc:
-    link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/Atlantis_5b_Turn_Point_Diluted_bitumen_2020-07-01.nc
+    link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/Atlantis_5b_Turn_Point_Diluted_bitumen_2020-07-01.nc
     
 output filename base: outputSalishSea
 
