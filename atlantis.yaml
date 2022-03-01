@@ -1,7 +1,7 @@
 run id: SS-Atlantis
 
 paths:
-  atlantis code: /ocean/$USER/Atlantis/atlantis-trunk/
+  atlantis code: /ocean/$USER/Atlantis/atlantis-trunk/AtlantisContam/
   atlantis executable name: atlantisCT
   runs directory: /ocean/$USER/Atlantis/SSAM_Runs/
   atlantis command: $HOME/conda_envs/atlantis-cmd/bin/atlantis
@@ -14,7 +14,7 @@ initial conditions: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_init_cont
 
 groups: /ocean/$USER/Atlantis/SSAM_Runs/AtlantisContamFiles/SS_grps.csv
 
-migration: /ocean/$USER/Atlantis/SSAM_Runs/AtlantisContamFiles/SalishMigrations.csv
+migrations: /ocean/$USER/Atlantis/SSAM_Runs/AtlantisContamFiles/SalishMigrations.csv
 
 parameters:
   # The run, forcing, physics, and biology parameters files are required for all runs,
