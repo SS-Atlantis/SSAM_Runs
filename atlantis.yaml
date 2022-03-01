@@ -1,17 +1,20 @@
 run id: SS-Atlantis
 
 paths:
-  atlantis code: /ocean/$USER/Atlantis/
+  atlantis code: /ocean/$USER/Atlantis/atlantis-trunk/
+  atlantis executable name: atlantisCT
   runs directory: /ocean/$USER/Atlantis/SSAM_Runs/
   atlantis command: $HOME/conda_envs/atlantis-cmd/bin/atlantis
 
 # The name of the boxes .bgm file must match the value of the "geometry" attribute in the
 # global attributes of the initial conditions file.
-boxes: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_xy.bgm
+boxes: /ocean/$USER/Atlantis/SSAM_Runs/AtlantisContamFiles/SS_xy.bgm
 
-initial conditions: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_init_contam.nc
+initial conditions: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_init_contam_updated.nc
 
-groups: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_grps.csv
+groups: /ocean/$USER/Atlantis/SSAM_Runs/AtlantisContamFiles/SS_grps.csv
+
+migration: /ocean/$USER/Atlantis/SSAM_Runs/AtlantisContamFiles/SalishMigrations.csv
 
 parameters:
   # The run, forcing, physics, and biology parameters files are required for all runs,
@@ -19,7 +22,7 @@ parameters:
   run: /ocean/$USER/Atlantis/SSAM_Runs/SS_run_contam.prm
   forcing: /ocean/$USER/Atlantis/SSAM_Runs/SS_forcing.prm
   physics: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_physics.prm
-  biology: /ocean/$USER/Atlantis/salish-sea-atlantis-model/00SS_biology_Beth_Contaminant.prm
+  biology: /ocean/$USER/Atlantis/salish-sea-atlantis-model/09SS_biology.prm
 
 forcing:
   # The keys must match the forcing file names in the forcing.prm file.
@@ -33,8 +36,8 @@ forcing:
   SS_salt.nc:
     link to: /ocean/$USER/Atlantis/Physics/Final/SS_salt_07-21.nc
   contaminants.nc:
-    link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/Atlantis_TurnPoint_20180101_43200_1depth.nc
-    #/ocean/$USER/Atlantis/salish-sea-atlantis-model/inputs/contam_SSAtlantis_4PAH.nc
+    link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/Atlantis_5b_Turn_Point_Diluted_bitumen_2020-07-01.nc
+    
 output filename base: outputSalishSea
 
 vcs revisions:
