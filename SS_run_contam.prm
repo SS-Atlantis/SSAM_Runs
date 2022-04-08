@@ -46,7 +46,7 @@ which_check   0        # ID number of group to track (if don't want to track any
 habitat_check 0
 which_fleet   33       # ID number of fleet to track (if don't want to track anything set to 33 (for other fleets see list below)
 move_check    67       # ID number of group where tracking movements  (if don't want to track anything set it to 67, for other groups see list below)
-fishmove      1        # Set to 0 to turn vertebrate movement off for debugging purposes
+fishmove      0        # Set to 0 to turn vertebrate movement off for debugging purposes
 debug         0        # 0=debuging off, 1=debug fishing, 2=debug discards, 3=debug histfishing,
                        # 4=debug assessments, 5=debug mpas, 6=debug effort, 7=debug econ effort,
                        # 8=debug econ, 9=debug quota, 10=debug aging, 11=debug_spawning,
@@ -64,10 +64,10 @@ dt         12 hour    # 12 hour time step
 tstop      100 day   # Stop time after the given period (1822 = 5; 3650=10; 5475=15; 7300=20, 18250 = 50)
 toutstart  0 day      # Output start time
 toutinc    0.5 day    # Write output with this periodicity: 1yr run = 1 day; 5 year = 30; 20 year = 91 days
-toutfinc   30 day     # Write fisheries output with this periodicity
+toutfinc   60 day     # Write fisheries output with this periodicity
 
 tsumout    0.5 day     # Write stock state summary with this periodicity; migration debug
-fishout    1          # Switch to turn fisheries output on = 1, off = 0
+fishout    0          # Switch to turn fisheries output on = 1, off = 0
 flagreusefile 2        # Switch to show want to append output file no = 0, yes = 1, replace = 2
 flagannual_Mest 1      # Write out mortality per predator annually (1) or not (0) #
 

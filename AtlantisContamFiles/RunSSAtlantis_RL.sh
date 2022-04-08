@@ -3,4 +3,4 @@
 
 #valgrind --log-file=valgrind%p.log --track-origins=yes --leak-check=full --track-fds=yes --show-reachable=yes 
 
-/ocean/rlovindeer/Atlantis/atlantis-trunk/AtlantisContam/atlantis/atlantismain/atlantisCT -i SS_init_contam.nc 0 -o outputSalishSea.nc -r Raisha_run.prm -f Raisha_forcing.prm -p Raisha_physics.prm -b Raisha_biology.prm -m SalishMigrations.csv -s SS_grps.csv -d /ocean/rlovindeer/MOAD/analysis-raisha/SSmodel_outputs/5b_TurnPoint_20200701
+/ocean/rlovindeer/Atlantis/atlantis-trunk/atlantis/atlantismain/atlantisMerged -i SS_init_contam_updated.nc 0 -o outputSalishSea.nc -r Raisha_run.prm -f Raisha_forcing.prm -p Raisha_physics.prm -b Raisha_biology.prm -s SS_grps_old.csv -d /ocean/rlovindeer/MOAD/analysis-raisha/SSmodel_outputs/5b_TurnPoint_20200119_test

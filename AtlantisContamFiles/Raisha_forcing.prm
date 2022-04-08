@@ -5,6 +5,7 @@
 nhdfiles 1
 hd0.name /ocean/rlovindeer/Atlantis/Physics/Final/SS_hydro_07-21.nc
 
+# Time reference. 1 uses date in hydro files as reference. 0 uses dates in the individual forcing files.
 ts_on_hydro_time 1
 
 # Frequency of inputs.ts and exports.ts output. Write out every 365 days.
@@ -100,26 +101,30 @@ tracerNames 4
 Naphthalene Phenanthrene Pyrene Benzo
 
 # Now the actual files. Can have more than one tracer in a file
-Naphthalene_nFiles 1
-Naphthalene_File0.name /ocean/rlovindeer/MOAD/analysis-raisha/notebooks/contaminant-dispersal/Atlantis_5b_Turn_Point_Diluted_bitumen_2020-07-01.nc
+Naphthalene_nFiles 2
+Naphthalene_File0.name /ocean/rlovindeer/MOAD/analysis-raisha/notebooks/contaminant-dispersal/Atlantis_contaminant_zeroes.nc
+Naphthalene_File1.name /ocean/rlovindeer/MOAD/analysis-raisha/notebooks/contaminant-dispersal/Atlantis_5b_2020-01-19_onets.nc
 Naphthalene_rewind 0
 Naphthalene_use_resets 1
 Naphthalene_ResetTol 0.1
 
-Phenanthrene_nFiles 1
-Phenanthrene_File0.name /ocean/rlovindeer/MOAD/analysis-raisha/notebooks/contaminant-dispersal/Atlantis_5b_Turn_Point_Diluted_bitumen_2020-07-01.nc
+Phenanthrene_nFiles 2
+Phenanthrene_File0.name /ocean/rlovindeer/MOAD/analysis-raisha/notebooks/contaminant-dispersal/Atlantis_contaminant_zeroes.nc
+Phenanthrene_File1.name /ocean/rlovindeer/MOAD/analysis-raisha/notebooks/contaminant-dispersal/Atlantis_5b_2020-01-19_onets.nc
 Phenanthrene_rewind 0
 Phenanthrene_use_resets 1
 Phenanthrene_ResetTol 0.1
 
-Pyrene_nFiles 1
-Pyrene_File0.name /ocean/rlovindeer/MOAD/analysis-raisha/notebooks/contaminant-dispersal/Atlantis_5b_Turn_Point_Diluted_bitumen_2020-07-01.nc
+Pyrene_nFiles 2
+Pyrene_File0.name /ocean/rlovindeer/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/Atlantis_contaminant_zeroes.nc
+Pyrene_File1.name /ocean/rlovindeer/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/Atlantis_5b_2020-01-19_onets.nc
 Pyrene_rewind 0
 Pyrene_use_resets 1
 Pyrene_ResetTol 0.1
 
-Benzo_nFiles 1
-Benzo_File0.name /ocean/rlovindeer/MOAD/analysis-raisha/notebooks/contaminant-dispersal/Atlantis_5b_Turn_Point_Diluted_bitumen_2020-07-01.nc
+Benzo_nFiles 2
+Benzo_File0.name /ocean/rlovindeer/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/Atlantis_contaminant_zeroes.nc
+Benzo_File1.name /ocean/rlovindeer/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/Atlantis_5b_2020-01-19_onets.nc
 Benzo_rewind 0
 Benzo_use_resets 1
 Benzo_ResetTol 0.1
