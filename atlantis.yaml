@@ -36,9 +36,11 @@ forcing:
   SS_salt.nc:
     link to: /ocean/$USER/Atlantis/Physics/Final/SS_salt_07-21.nc
   contaminants01.nc:
-    link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/Atlantis_contaminant_zeroes.nc
+    link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/Atlantis_contaminant_zeroes.nc
   contaminants02.nc:
-    link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/Atlantis_5b_2020-01-19_day2release.nc
+    link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/Atlantis_5b_2020-01-19_day2release.nc
+  contaminants03.nc:
+    link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/contam_SSAtlantis_dummy.nc
     
 output filename base: outputSalishSea
 
