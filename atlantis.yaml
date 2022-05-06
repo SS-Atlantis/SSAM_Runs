@@ -1,8 +1,8 @@
 run id: SS-Atlantis
 
 paths:
-  atlantis code: /ocean/$USER/Atlantis/atlantis-trunk/AtlantisContam
-  atlantis executable name: atlantisCT
+  atlantis code: /ocean/$USER/Atlantis/atlantis-trunk/
+  atlantis executable name: atlantisMerged
   runs directory: /ocean/$USER/Atlantis/SSAM_Runs/
   atlantis command: $HOME/conda_envs/atlantis-cmd/bin/atlantis
 
@@ -22,7 +22,7 @@ parameters:
   run: /ocean/$USER/Atlantis/SSAM_Runs/SS_run_contam.prm
   forcing: /ocean/$USER/Atlantis/SSAM_Runs/SS_forcing.prm
   physics: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_physics.prm
-  biology: /ocean/$USER/Atlantis/SSAM_Runs/AtlantisContamFiles/Raisha_biology.prm
+  biology: /ocean/$USER/Atlantis/salish-sea-atlantis-model/04SS_biology.prm
 
 forcing:
   # The keys must match the forcing file names in the forcing.prm file.
@@ -36,11 +36,11 @@ forcing:
   SS_salt.nc:
     link to: /ocean/$USER/Atlantis/Physics/Final/SS_salt_07-21.nc
   contaminants01.nc:
-    link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/Atlantis_5b_2020-01-19_box60only.nc
-  #contaminants02.nc:
-  #  link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/Atlantis_5b_2020-01-19_day2release.nc
-  #contaminants03.nc:
-  #  link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/contam_SSAtlantis_dummy.nc
+    link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/Atlantis_5b_1960test_day2release.nc
+#  contaminants02.nc:
+#    link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/Atlantis_5b_2020-01-19_day2release.nc
+#  contaminants03.nc:
+#    link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/contam_SSAtlantis_dummy.nc
     
 output filename base: outputSalishSea
 
