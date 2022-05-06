@@ -3,7 +3,7 @@
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## Creator Heidi Pethybridge
 ## Updated by Javier Porobic | Jun 2020
-## Updated by Beth Fulton | Jan 2022
+## Updated by Beth Fulton & Raisha Lovindeer | May 2022
 
 ## Flags and switches
 # Those determining set-up and recording
@@ -114,7 +114,7 @@ flagconstrain_epiwander  0
 
 flaglight       0    Light adaptation: 1 = on, 0 = off 1
 flaglightopt    3    Light model: 0=orig, 1=bottom, 2=top, 3=mid-depth of cell 3
-lim_sun_hours   13   # ** 15hr - summer; 9hr winter Whether using limted hours of sun oer day or the default assumption of half the day is "day"
+lim_sun_hours   13   # ** 15hr - summer; 9hr winter Whether using limted hours of sun per day or the default assumption of half the day is "day"
 swr_scalar      0.45
 swr_const       1367.0
 swr_cos_coefft  0.034
@@ -222,6 +222,64 @@ flagplankfishWHB  1  WHB: 1 = yes, 0 = no 1
 flagplankfishORT  0  ORT: 1 = yes, 0 = no 1
 flagplankfishPHR  0  PHR: 1 = yes, 0 = no 1
 flagplankfishORR  0  ORR: 1 = yes, 0 = no 1
+
+## Ageing flags
+# Whether keep plus group - especially for migratory groups (1 = yes, 0 = no)
+flagkeep_plusgroupFHE 0
+flagkeep_plusgroupFPS 0
+flagkeep_plusgroupFSA 0
+flagkeep_plusgroupFCH 0
+flagkeep_plusgroupFCO 0
+flagkeep_plusgroupFSS 0
+flagkeep_plusgroupFPI 0
+flagkeep_plusgroupFCU 0
+flagkeep_plusgroupFSO 0
+flagkeep_plusgroupHCH 0
+flagkeep_plusgroupHCO 0
+flagkeep_plusgroupHSS 0
+flagkeep_plusgroupFHK 0
+flagkeep_plusgroupFPO 0
+flagkeep_plusgroupFLC 0
+flagkeep_plusgroupFBP 0
+flagkeep_plusgroupFDS 0
+flagkeep_plusgroupFDL 0
+flagkeep_plusgroupFRO 0
+flagkeep_plusgroupFFS 0
+flagkeep_plusgroupFFL 0
+flagkeep_plusgroupSHD 0
+flagkeep_plusgroupSHS 0
+flagkeep_plusgroupSRA 0
+flagkeep_plusgroupSSK 0
+flagkeep_plusgroupSB 0
+flagkeep_plusgroupSP 0
+flagkeep_plusgroupCSL 0
+flagkeep_plusgroupHSL 0
+flagkeep_plusgroupPHR 0
+flagkeep_plusgroupORR 0
+flagkeep_plusgroupORT 0
+flagkeep_plusgroupWHB 0
+flagkeep_plusgroupBRL 0
+flagkeep_plusgroupDCR 0
+flagkeep_plusgroupBIV 0
+flagkeep_plusgroupCEP 0
+flagkeep_plusgroupBFF 0
+flagkeep_plusgroupSPH 0
+flagkeep_plusgroupBG 0
+flagkeep_plusgroupBMD 0
+flagkeep_plusgroupPWN 0
+flagkeep_plusgroupBD 0
+flagkeep_plusgroupBC 0
+flagkeep_plusgroupMA 0
+flagkeep_plusgroupSG 0
+flagkeep_plusgroupZG 0
+flagkeep_plusgroupPL 0
+flagkeep_plusgroupPS 0
+flagkeep_plusgroupZL 0
+flagkeep_plusgroupZM 0
+flagkeep_plusgroupZS 0
+flagkeep_plusgroupPB 0
+flagkeep_plusgroupBB 0
+flagkeep_plusgroupBO 0
 
 # Recruitment flags
 flagtrecruitdistrib 1 0=humped recruit arrival distrib, 1=flat distrib of recruits 1
@@ -458,7 +516,7 @@ flagstockingBGA 0
 flagstockingBRL 0
 flagstockingDCR 0
 
-# Flag indicating whether the vertebrate group bearslive young (0 = no, 1 = yes)
+# Flag indicating whether the vertebrate group bears live young (0 = no, 1 = yes)
 flagbearliveHCH 0
 flagbearliveHCO 0
 flagbearliveHSS 0
@@ -1136,10 +1194,7 @@ HSS_K_salt_const 2.0
 SB_K_salt_const 2.0
 SBP_K_salt_const 2.0
 SP_K_salt_const 2.0
-SPH_K_salt_const 2.0
-BGA_K_salt_const 2.0
-BRL_K_salt_const 2.0
-DCR_K_salt_const 2.0
+
 HSL_K_salt_const 2.0
 SFL_K_salt_const 2.0
 CSL_K_salt_const  2.0
@@ -1147,7 +1202,8 @@ WHB_K_salt_const 2.0
 ORT_K_salt_const 2.0
 PHR_K_salt_const 2.0
 ORR_K_salt_const 2.0
-
+BRL_K_salt_const 2.0
+DCR_K_salt_const 2.0
 CEP_K_salt_const 2.0
 BFF_K_salt_const 2.0
 BIV_K_salt_const 2.0
@@ -3909,16 +3965,16 @@ SRA_homerangerad     60000
 SHS_homerangerad     600000
 SSK_homerangerad     600000
 HSS_homerangerad     600000
-SP_homerangerad     600000
+SP_homerangerad      600000
 SBP_homerangerad     6000
-SB_homerangerad     60000
+SB_homerangerad      60000
 SPH_homerangerad     60000
 BGA_homerangerad     60000
 BRL_homerangerad     60000
 DCR_homerangerad     60000
 HSL_homerangerad     600000
 SFL_homerangerad     600000
-CSL_homerangerad      600000
+CSL_homerangerad     600000
 WHB_homerangerad     600000
 ORT_homerangerad     600000
 PHR_homerangerad     60000
