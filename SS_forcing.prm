@@ -5,8 +5,8 @@
 nhdfiles 1
 hd0.name SS_hydro.nc
 
-# Time reference. 1 uses date in hydro files as reference. 0 uses dates in the individual forcing files.
-ts_on_hydro_time 1
+# Time reference. 1 uses date in hydro files as reference. 0 uses dates in the initial conditions files.
+ts_on_hydro_time 0
 
 # Frequency of inputs.ts and exports.ts output. Write out every 365 days.
 inputs_tout 365 days
