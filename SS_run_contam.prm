@@ -1,6 +1,6 @@
 # March - August 2019, Heidi Pethybridge
-# Updated July 2020
-# Javier Porobic
+# Updated July 2020, Javier Porobic
+# Updated May 2022, Beth Fulton & Raisha Lovindeer
 # Salish Sea Atlantis model run file
 #############################################
 # Run parameters
@@ -22,6 +22,7 @@ mirror_invalid      0   # Flag indicating whether want the model to estimate sou
 track_contaminants  1   # Whether tracking contaminants or not
 flagpassivetracer   0   # Flag indicating whether a passive tracer is needed for tracking tranpsorts or not (1 = yes, 0 = no)
 flag_sanity_check   1   # flag to check for the large vertebrate reproduction bug
+flag_contam_sanity_check 0   # flag to turn on checking of contaminant fluxes
 
 flag_old_embryo_init        0
 flag_replicate_old_calendar 0
@@ -61,12 +62,12 @@ tburnday      0
 
 title      SalishSea model run
 dt         12 hour    # 12 hour time step
-tstop      100 day   # Stop time after the given period (1822 = 5; 3650=10; 5475=15; 7300=20, 18250 = 50, 27375 = 75)
+tstop      3650 day   # Stop time after the given period (1822 = 5; 3650=10; 5475=15; 7300=20, 18250 = 50, 27375 = 75)
 toutstart  0 day      # Output start time
-toutinc    0.5 day    # Write output with this periodicity: 1yr run = 1 day; 5 year = 30; 20 year = 91 days
+toutinc    60 day    # Write output with this periodicity: 1yr run = 1 day; 5 year = 30; 20 year = 91 days
 toutfinc   60 day     # Write fisheries output with this periodicity
 
-tsumout    0.5 day     # Write stock state summary with this periodicity; migration debug
+tsumout    0 day     # Write stock state summary with this periodicity; migration debug
 fishout    0          # Switch to turn fisheries output on = 1, off = 0
 flagreusefile 2        # Switch to show want to append output file no = 0, yes = 1, replace = 2
 flagannual_Mest 1      # Write out mortality per predator annually (1) or not (0) #
@@ -102,7 +103,7 @@ flagAllowLand     0    # Whether to allow for dynamic land layers (1) or not (0)
 flagindustry_on   0    # Flag indicating whether industry models are on (1) or not (0)
 
 # Parameters for rescalingin inital vertebrate densities - only for use in emergencies,
-flagscaleinit     1  # Flag to indicate whether scaling initial vertebrate densities (1=yes, 0=no); 1 selected and rescales by the factor stated below. read numbers and multiplies.
+flagscaleinit     0  # Flag to indicate whether scaling initial vertebrate densities (1=yes, 0=no); 1 selected and rescales by the factor stated below. read numbers and multiplies.
 
 # Multiplicative scalr for vertebrate initial densities (as read-in from cdf file)
 init_scalar       58
