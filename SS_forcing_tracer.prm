@@ -92,38 +92,21 @@ use_stressfiles 0
 ## ~      Adding contaminant tracers in the model       ~ ##
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 
-use_force_tracers 0
+use_force_tracers 1
 use_weighted_assim 0
 
 # The number of tracers to search for in the files and the names of those tracers.
-nforceTracers 4
-tracerNames 4
-Naphthalene Phenanthrene Pyrene Benzo
+nforceTracers 1
+tracerNames 1
+Phenanthrene
 
 # Now the actual files. Can have more than one tracer in a file
-Naphthalene_nFiles 0
-Naphthalene_File0.name contaminants01.nc
-Naphthalene_rewind 0
-Naphthalene_use_resets 1
-Naphthalene_ResetTol 0.1
 
-Phenanthrene_nFiles 0
+Phenanthrene_nFiles 1
 Phenanthrene_File0.name contaminants01.nc
 Phenanthrene_rewind 0
-Phenanthrene_use_resets 1
+Phenanthrene_File0.use_resets 0
 Phenanthrene_ResetTol 0.1
-
-Pyrene_nFiles 0
-Pyrene_File0.name contaminants01.nc
-Pyrene_rewind 0
-Pyrene_use_resets 1
-Pyrene_ResetTol 0.1
-
-Benzo_nFiles 0
-Benzo_File0.name contaminants01.nc
-Benzo_rewind 0
-Benzo_use_resets 1
-Benzo_ResetTol 0.1
 
 # Light and noise pollutants
 use_pollutantfiles 0

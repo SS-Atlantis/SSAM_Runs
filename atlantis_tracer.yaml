@@ -8,9 +8,9 @@ paths:
 
 # The name of the boxes .bgm file must match the value of the "geometry" attribute in the
 # global attributes of the initial conditions file.
-boxes: /ocean/$USER/Atlantis/SSAM_Runs/AtlantisContamFiles/SS_xy.bgm
+boxes: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_xy.bgm
 
-initial conditions: /ocean/$USER/Atlantis/SSAM_Runs/AtlantisContamFiles/SS_init_wtracer.nc
+initial conditions: /ocean/$USER/Atlantis/SSAM_Runs/AtlantisContamFiles/SS_init_0tracer.nc
 
 groups: /ocean/$USER/Atlantis/SSAM_Runs/AtlantisContamFiles/SS_grps.csv
 
@@ -35,6 +35,8 @@ forcing:
     link to: /ocean/$USER/Atlantis/Physics/Final/SS_temp_07-21.nc
   SS_salt.nc:
     link to: /ocean/$USER/Atlantis/Physics/Final/SS_salt_07-21.nc
+  contaminants01.nc:
+    link to: /ocean/$USER/Atlantis/ShipScrubber/Atlantis_Scrubber_PAH_2019.nc
     
 output filename base: outputSalishSea
 
