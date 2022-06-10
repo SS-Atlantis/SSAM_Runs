@@ -1,0 +1,697 @@
+##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~##
+##           FORCING FILES        ##
+##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~##
+# input directories
+nhdfiles 1
+hd0.name SS_hydro.nc
+
+# Time reference. 1 uses date in hydro files as reference. 0 uses dates in the initial conditions files.
+ts_on_hydro_time 1
+
+# Frequency of inputs.ts and exports.ts output. Write out every 365 days.
+inputs_tout 365 days
+
+# Bottom stress
+# BottomStress inputs/stress/stress.nc
+# BottomStress inputs/stress/nxstress.nc
+
+use_VertMixFiles 0  ###*** New parameter 2018
+
+#############################################
+# Point source\sink lists
+npointss 0
+
+#############################################
+# Temperature time series file
+use_tempfiles 1
+ntempfiles 1
+Temperature0.name SS_temp.nc
+temp_rewind 1
+
+# Salinity time series data file
+use_saltfiles 1
+nsaltfiles 1
+Salinity0.name SS_salt.nc
+salt_rewind 1
+
+# Rain and evaporation
+#Precipitation inputs/meteor/times1.6.nc
+#Evaporation   inputs/meteor/84-95.nc
+
+#Solar time series run vicmpa file
+#Solar_radiation NewInputs/meteor/solar9195.ts
+#Solar_radiation_rewind 0
+
+use_phFiles 0
+use_VertMixFiles 0
+
+# Atmospheric pCO2 time series file
+# pCO2_forcing NewInputs/pCO2RCP45.ts
+
+# Recruitment_time_series
+
+# Recruitment_enviro_forcing
+
+
+#############################################
+# Historical catch lists - nCatchts is the number of time series to be loaded and
+# typeCatchts is whether or not the data is to be interpolated (0) by the model
+# or just use previous record (1)
+nCatchts 0
+typeCatchts 0
+
+#############################################
+# Historical discard lists
+nDiscardts 0
+typeDiscardts 0
+
+#############################################
+# Residual lists - on market fish prices
+nResidualsts 0
+typeResidualsts 0
+
+#############################################
+# Economic statistics - GDP and fuel costs
+nEconts 0
+typeEconts 0
+
+##############################################
+# MPA (spatial management) files for cases where change through time
+# Same format as Catchts above
+nMPAts 0
+typeMPAts 0
+
+
+###########################################################################################
+# Added by Bec Gorton 5th Feb 2018. Please check these values are valid.
+
+use_stressfiles 0
+
+
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+## ~      Adding contaminant tracers in the model       ~ ##
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+
+use_force_tracers 1
+use_weighted_assim 0
+
+# The number of tracers to search for in the files and the names of those tracers.
+nforceTracers 4
+tracerNames 4
+Naphthalene Phenanthrene Pyrene Benzo
+
+# Now the actual files. Can have more than one tracer in a file
+Naphthalene_nFiles 72
+Naphthalene_File0.name contaminants01.nc
+Naphthalene_File1.name contaminants01.nc
+Naphthalene_File2.name contaminants01.nc
+Naphthalene_File3.name contaminants01.nc
+Naphthalene_File4.name contaminants01.nc
+Naphthalene_File5.name contaminants01.nc
+Naphthalene_File6.name contaminants01.nc
+Naphthalene_File7.name contaminants01.nc
+Naphthalene_File8.name contaminants01.nc
+Naphthalene_File9.name contaminants01.nc
+Naphthalene_File10.name contaminants01.nc
+Naphthalene_File11.name contaminants01.nc
+Naphthalene_File12.name contaminants01.nc
+Naphthalene_File13.name contaminants01.nc
+Naphthalene_File14.name contaminants01.nc
+Naphthalene_File15.name contaminants01.nc
+Naphthalene_File16.name contaminants01.nc
+Naphthalene_File17.name contaminants01.nc
+Naphthalene_File18.name contaminants01.nc
+Naphthalene_File19.name contaminants01.nc
+Naphthalene_File20.name contaminants01.nc
+Naphthalene_File21.name contaminants01.nc
+Naphthalene_File22.name contaminants01.nc
+Naphthalene_File23.name contaminants01.nc
+Naphthalene_File24.name contaminants01.nc
+Naphthalene_File25.name contaminants01.nc
+Naphthalene_File26.name contaminants01.nc
+Naphthalene_File27.name contaminants01.nc
+Naphthalene_File28.name contaminants01.nc
+Naphthalene_File29.name contaminants01.nc
+Naphthalene_File30.name contaminants01.nc
+Naphthalene_File31.name contaminants01.nc
+Naphthalene_File32.name contaminants01.nc
+Naphthalene_File33.name contaminants01.nc
+Naphthalene_File34.name contaminants01.nc
+Naphthalene_File35.name contaminants01.nc
+Naphthalene_File36.name contaminants01.nc
+Naphthalene_File37.name contaminants01.nc
+Naphthalene_File38.name contaminants01.nc
+Naphthalene_File39.name contaminants01.nc
+Naphthalene_File40.name contaminants01.nc
+Naphthalene_File41.name contaminants01.nc
+Naphthalene_File42.name contaminants01.nc
+Naphthalene_File43.name contaminants01.nc
+Naphthalene_File44.name contaminants01.nc
+Naphthalene_File45.name contaminants01.nc
+Naphthalene_File46.name contaminants01.nc
+Naphthalene_File47.name contaminants01.nc
+Naphthalene_File48.name contaminants01.nc
+Naphthalene_File49.name contaminants01.nc
+Naphthalene_File50.name contaminants01.nc
+Naphthalene_File51.name contaminants01.nc
+Naphthalene_File52.name contaminants01.nc
+Naphthalene_File53.name contaminants01.nc
+Naphthalene_File54.name contaminants01.nc
+Naphthalene_File55.name contaminants01.nc
+Naphthalene_File56.name contaminants01.nc
+Naphthalene_File57.name contaminants01.nc
+Naphthalene_File58.name contaminants01.nc
+Naphthalene_File59.name contaminants01.nc
+Naphthalene_File60.name contaminants01.nc
+Naphthalene_File61.name contaminants01.nc
+Naphthalene_File62.name contaminants01.nc
+Naphthalene_File63.name contaminants01.nc
+Naphthalene_File64.name contaminants01.nc
+Naphthalene_File65.name contaminants01.nc
+Naphthalene_File66.name contaminants01.nc
+Naphthalene_File67.name contaminants01.nc
+Naphthalene_File68.name contaminants01.nc
+Naphthalene_File69.name contaminants01.nc
+Naphthalene_File70.name contaminants02.nc
+Naphthalene_File71.name contaminants03.nc
+Naphthalene_rewind 0
+Naphthalene_File0.use_resets 0
+Naphthalene_File1.use_resets 0
+Naphthalene_File2.use_resets 0
+Naphthalene_File3.use_resets 0
+Naphthalene_File4.use_resets 0
+Naphthalene_File5.use_resets 0
+Naphthalene_File6.use_resets 0
+Naphthalene_File7.use_resets 0
+Naphthalene_File8.use_resets 0
+Naphthalene_File9.use_resets 0
+Naphthalene_File10.use_resets 0
+Naphthalene_File11.use_resets 0
+Naphthalene_File12.use_resets 0
+Naphthalene_File13.use_resets 0
+Naphthalene_File14.use_resets 0
+Naphthalene_File15.use_resets 0
+Naphthalene_File16.use_resets 0
+Naphthalene_File17.use_resets 0
+Naphthalene_File18.use_resets 0
+Naphthalene_File19.use_resets 0
+Naphthalene_File20.use_resets 0
+Naphthalene_File21.use_resets 0
+Naphthalene_File22.use_resets 0
+Naphthalene_File23.use_resets 0
+Naphthalene_File24.use_resets 0
+Naphthalene_File25.use_resets 0
+Naphthalene_File26.use_resets 0
+Naphthalene_File27.use_resets 0
+Naphthalene_File28.use_resets 0
+Naphthalene_File29.use_resets 0
+Naphthalene_File30.use_resets 0
+Naphthalene_File31.use_resets 0
+Naphthalene_File32.use_resets 0
+Naphthalene_File33.use_resets 0
+Naphthalene_File34.use_resets 0
+Naphthalene_File35.use_resets 0
+Naphthalene_File36.use_resets 0
+Naphthalene_File37.use_resets 0
+Naphthalene_File38.use_resets 0
+Naphthalene_File39.use_resets 0
+Naphthalene_File40.use_resets 0
+Naphthalene_File41.use_resets 0
+Naphthalene_File42.use_resets 0
+Naphthalene_File43.use_resets 0
+Naphthalene_File44.use_resets 0
+Naphthalene_File45.use_resets 0
+Naphthalene_File46.use_resets 0
+Naphthalene_File47.use_resets 0
+Naphthalene_File48.use_resets 0
+Naphthalene_File49.use_resets 0
+Naphthalene_File50.use_resets 0
+Naphthalene_File51.use_resets 0
+Naphthalene_File52.use_resets 0
+Naphthalene_File53.use_resets 0
+Naphthalene_File54.use_resets 0
+Naphthalene_File55.use_resets 0
+Naphthalene_File56.use_resets 0
+Naphthalene_File57.use_resets 0
+Naphthalene_File58.use_resets 0
+Naphthalene_File59.use_resets 0
+Naphthalene_File60.use_resets 0
+Naphthalene_File61.use_resets 0
+Naphthalene_File62.use_resets 0
+Naphthalene_File63.use_resets 0
+Naphthalene_File64.use_resets 0
+Naphthalene_File65.use_resets 0
+Naphthalene_File66.use_resets 0
+Naphthalene_File67.use_resets 0
+Naphthalene_File68.use_resets 0
+Naphthalene_File69.use_resets 0
+Naphthalene_File70.use_resets 1
+Naphthalene_File71.use_resets 0
+Naphthalene_ResetTol 0.1
+
+Phenanthrene_nFiles 72
+Phenanthrene_File0.name contaminants01.nc
+Phenanthrene_File1.name contaminants01.nc
+Phenanthrene_File2.name contaminants01.nc
+Phenanthrene_File3.name contaminants01.nc
+Phenanthrene_File4.name contaminants01.nc
+Phenanthrene_File5.name contaminants01.nc
+Phenanthrene_File6.name contaminants01.nc
+Phenanthrene_File7.name contaminants01.nc
+Phenanthrene_File8.name contaminants01.nc
+Phenanthrene_File9.name contaminants01.nc
+Phenanthrene_File10.name contaminants01.nc
+Phenanthrene_File11.name contaminants01.nc
+Phenanthrene_File12.name contaminants01.nc
+Phenanthrene_File13.name contaminants01.nc
+Phenanthrene_File14.name contaminants01.nc
+Phenanthrene_File15.name contaminants01.nc
+Phenanthrene_File16.name contaminants01.nc
+Phenanthrene_File17.name contaminants01.nc
+Phenanthrene_File18.name contaminants01.nc
+Phenanthrene_File19.name contaminants01.nc
+Phenanthrene_File20.name contaminants01.nc
+Phenanthrene_File21.name contaminants01.nc
+Phenanthrene_File22.name contaminants01.nc
+Phenanthrene_File23.name contaminants01.nc
+Phenanthrene_File24.name contaminants01.nc
+Phenanthrene_File25.name contaminants01.nc
+Phenanthrene_File26.name contaminants01.nc
+Phenanthrene_File27.name contaminants01.nc
+Phenanthrene_File28.name contaminants01.nc
+Phenanthrene_File29.name contaminants01.nc
+Phenanthrene_File30.name contaminants01.nc
+Phenanthrene_File31.name contaminants01.nc
+Phenanthrene_File32.name contaminants01.nc
+Phenanthrene_File33.name contaminants01.nc
+Phenanthrene_File34.name contaminants01.nc
+Phenanthrene_File35.name contaminants01.nc
+Phenanthrene_File36.name contaminants01.nc
+Phenanthrene_File37.name contaminants01.nc
+Phenanthrene_File38.name contaminants01.nc
+Phenanthrene_File39.name contaminants01.nc
+Phenanthrene_File40.name contaminants01.nc
+Phenanthrene_File41.name contaminants01.nc
+Phenanthrene_File42.name contaminants01.nc
+Phenanthrene_File43.name contaminants01.nc
+Phenanthrene_File44.name contaminants01.nc
+Phenanthrene_File45.name contaminants01.nc
+Phenanthrene_File46.name contaminants01.nc
+Phenanthrene_File47.name contaminants01.nc
+Phenanthrene_File48.name contaminants01.nc
+Phenanthrene_File49.name contaminants01.nc
+Phenanthrene_File50.name contaminants01.nc
+Phenanthrene_File51.name contaminants01.nc
+Phenanthrene_File52.name contaminants01.nc
+Phenanthrene_File53.name contaminants01.nc
+Phenanthrene_File54.name contaminants01.nc
+Phenanthrene_File55.name contaminants01.nc
+Phenanthrene_File56.name contaminants01.nc
+Phenanthrene_File57.name contaminants01.nc
+Phenanthrene_File58.name contaminants01.nc
+Phenanthrene_File59.name contaminants01.nc
+Phenanthrene_File60.name contaminants01.nc
+Phenanthrene_File61.name contaminants01.nc
+Phenanthrene_File62.name contaminants01.nc
+Phenanthrene_File63.name contaminants01.nc
+Phenanthrene_File64.name contaminants01.nc
+Phenanthrene_File65.name contaminants01.nc
+Phenanthrene_File66.name contaminants01.nc
+Phenanthrene_File67.name contaminants01.nc
+Phenanthrene_File68.name contaminants01.nc
+Phenanthrene_File69.name contaminants01.nc
+Phenanthrene_File70.name contaminants02.nc
+Phenanthrene_File71.name contaminants03.nc
+Phenanthrene_rewind 0
+Phenanthrene_File0.use_resets 0
+Phenanthrene_File1.use_resets 0
+Phenanthrene_File2.use_resets 0
+Phenanthrene_File3.use_resets 0
+Phenanthrene_File4.use_resets 0
+Phenanthrene_File5.use_resets 0
+Phenanthrene_File6.use_resets 0
+Phenanthrene_File7.use_resets 0
+Phenanthrene_File8.use_resets 0
+Phenanthrene_File9.use_resets 0
+Phenanthrene_File10.use_resets 0
+Phenanthrene_File11.use_resets 0
+Phenanthrene_File12.use_resets 0
+Phenanthrene_File13.use_resets 0
+Phenanthrene_File14.use_resets 0
+Phenanthrene_File15.use_resets 0
+Phenanthrene_File16.use_resets 0
+Phenanthrene_File17.use_resets 0
+Phenanthrene_File18.use_resets 0
+Phenanthrene_File19.use_resets 0
+Phenanthrene_File20.use_resets 0
+Phenanthrene_File21.use_resets 0
+Phenanthrene_File22.use_resets 0
+Phenanthrene_File23.use_resets 0
+Phenanthrene_File24.use_resets 0
+Phenanthrene_File25.use_resets 0
+Phenanthrene_File26.use_resets 0
+Phenanthrene_File27.use_resets 0
+Phenanthrene_File28.use_resets 0
+Phenanthrene_File29.use_resets 0
+Phenanthrene_File30.use_resets 0
+Phenanthrene_File31.use_resets 0
+Phenanthrene_File32.use_resets 0
+Phenanthrene_File33.use_resets 0
+Phenanthrene_File34.use_resets 0
+Phenanthrene_File35.use_resets 0
+Phenanthrene_File36.use_resets 0
+Phenanthrene_File37.use_resets 0
+Phenanthrene_File38.use_resets 0
+Phenanthrene_File39.use_resets 0
+Phenanthrene_File40.use_resets 0
+Phenanthrene_File41.use_resets 0
+Phenanthrene_File42.use_resets 0
+Phenanthrene_File43.use_resets 0
+Phenanthrene_File44.use_resets 0
+Phenanthrene_File45.use_resets 0
+Phenanthrene_File46.use_resets 0
+Phenanthrene_File47.use_resets 0
+Phenanthrene_File48.use_resets 0
+Phenanthrene_File49.use_resets 0
+Phenanthrene_File50.use_resets 0
+Phenanthrene_File51.use_resets 0
+Phenanthrene_File52.use_resets 0
+Phenanthrene_File53.use_resets 0
+Phenanthrene_File54.use_resets 0
+Phenanthrene_File55.use_resets 0
+Phenanthrene_File56.use_resets 0
+Phenanthrene_File57.use_resets 0
+Phenanthrene_File58.use_resets 0
+Phenanthrene_File59.use_resets 0
+Phenanthrene_File60.use_resets 0
+Phenanthrene_File61.use_resets 0
+Phenanthrene_File62.use_resets 0
+Phenanthrene_File63.use_resets 0
+Phenanthrene_File64.use_resets 0
+Phenanthrene_File65.use_resets 0
+Phenanthrene_File66.use_resets 0
+Phenanthrene_File67.use_resets 0
+Phenanthrene_File68.use_resets 0
+Phenanthrene_File69.use_resets 0
+Phenanthrene_File70.use_resets 1
+Phenanthrene_File71.use_resets 0
+Phenanthrene_ResetTol 0.1
+
+Pyrene_nFiles 72
+Pyrene_File0.name contaminants01.nc
+Pyrene_File1.name contaminants01.nc
+Pyrene_File2.name contaminants01.nc
+Pyrene_File3.name contaminants01.nc
+Pyrene_File4.name contaminants01.nc
+Pyrene_File5.name contaminants01.nc
+Pyrene_File6.name contaminants01.nc
+Pyrene_File7.name contaminants01.nc
+Pyrene_File8.name contaminants01.nc
+Pyrene_File9.name contaminants01.nc
+Pyrene_File10.name contaminants01.nc
+Pyrene_File11.name contaminants01.nc
+Pyrene_File12.name contaminants01.nc
+Pyrene_File13.name contaminants01.nc
+Pyrene_File14.name contaminants01.nc
+Pyrene_File15.name contaminants01.nc
+Pyrene_File16.name contaminants01.nc
+Pyrene_File17.name contaminants01.nc
+Pyrene_File18.name contaminants01.nc
+Pyrene_File19.name contaminants01.nc
+Pyrene_File20.name contaminants01.nc
+Pyrene_File21.name contaminants01.nc
+Pyrene_File22.name contaminants01.nc
+Pyrene_File23.name contaminants01.nc
+Pyrene_File24.name contaminants01.nc
+Pyrene_File25.name contaminants01.nc
+Pyrene_File26.name contaminants01.nc
+Pyrene_File27.name contaminants01.nc
+Pyrene_File28.name contaminants01.nc
+Pyrene_File29.name contaminants01.nc
+Pyrene_File30.name contaminants01.nc
+Pyrene_File31.name contaminants01.nc
+Pyrene_File32.name contaminants01.nc
+Pyrene_File33.name contaminants01.nc
+Pyrene_File34.name contaminants01.nc
+Pyrene_File35.name contaminants01.nc
+Pyrene_File36.name contaminants01.nc
+Pyrene_File37.name contaminants01.nc
+Pyrene_File38.name contaminants01.nc
+Pyrene_File39.name contaminants01.nc
+Pyrene_File40.name contaminants01.nc
+Pyrene_File41.name contaminants01.nc
+Pyrene_File42.name contaminants01.nc
+Pyrene_File43.name contaminants01.nc
+Pyrene_File44.name contaminants01.nc
+Pyrene_File45.name contaminants01.nc
+Pyrene_File46.name contaminants01.nc
+Pyrene_File47.name contaminants01.nc
+Pyrene_File48.name contaminants01.nc
+Pyrene_File49.name contaminants01.nc
+Pyrene_File50.name contaminants01.nc
+Pyrene_File51.name contaminants01.nc
+Pyrene_File52.name contaminants01.nc
+Pyrene_File53.name contaminants01.nc
+Pyrene_File54.name contaminants01.nc
+Pyrene_File55.name contaminants01.nc
+Pyrene_File56.name contaminants01.nc
+Pyrene_File57.name contaminants01.nc
+Pyrene_File58.name contaminants01.nc
+Pyrene_File59.name contaminants01.nc
+Pyrene_File60.name contaminants01.nc
+Pyrene_File61.name contaminants01.nc
+Pyrene_File62.name contaminants01.nc
+Pyrene_File63.name contaminants01.nc
+Pyrene_File64.name contaminants01.nc
+Pyrene_File65.name contaminants01.nc
+Pyrene_File66.name contaminants01.nc
+Pyrene_File67.name contaminants01.nc
+Pyrene_File68.name contaminants01.nc
+Pyrene_File69.name contaminants01.nc
+Pyrene_File70.name contaminants02.nc
+Pyrene_File71.name contaminants03.nc
+Pyrene_rewind 0
+Pyrene_File0.use_resets 0
+Pyrene_File1.use_resets 0
+Pyrene_File2.use_resets 0
+Pyrene_File3.use_resets 0
+Pyrene_File4.use_resets 0
+Pyrene_File5.use_resets 0
+Pyrene_File6.use_resets 0
+Pyrene_File7.use_resets 0
+Pyrene_File8.use_resets 0
+Pyrene_File9.use_resets 0
+Pyrene_File10.use_resets 0
+Pyrene_File11.use_resets 0
+Pyrene_File12.use_resets 0
+Pyrene_File13.use_resets 0
+Pyrene_File14.use_resets 0
+Pyrene_File15.use_resets 0
+Pyrene_File16.use_resets 0
+Pyrene_File17.use_resets 0
+Pyrene_File18.use_resets 0
+Pyrene_File19.use_resets 0
+Pyrene_File20.use_resets 0
+Pyrene_File21.use_resets 0
+Pyrene_File22.use_resets 0
+Pyrene_File23.use_resets 0
+Pyrene_File24.use_resets 0
+Pyrene_File25.use_resets 0
+Pyrene_File26.use_resets 0
+Pyrene_File27.use_resets 0
+Pyrene_File28.use_resets 0
+Pyrene_File29.use_resets 0
+Pyrene_File30.use_resets 0
+Pyrene_File31.use_resets 0
+Pyrene_File32.use_resets 0
+Pyrene_File33.use_resets 0
+Pyrene_File34.use_resets 0
+Pyrene_File35.use_resets 0
+Pyrene_File36.use_resets 0
+Pyrene_File37.use_resets 0
+Pyrene_File38.use_resets 0
+Pyrene_File39.use_resets 0
+Pyrene_File40.use_resets 0
+Pyrene_File41.use_resets 0
+Pyrene_File42.use_resets 0
+Pyrene_File43.use_resets 0
+Pyrene_File44.use_resets 0
+Pyrene_File45.use_resets 0
+Pyrene_File46.use_resets 0
+Pyrene_File47.use_resets 0
+Pyrene_File48.use_resets 0
+Pyrene_File49.use_resets 0
+Pyrene_File50.use_resets 0
+Pyrene_File51.use_resets 0
+Pyrene_File52.use_resets 0
+Pyrene_File53.use_resets 0
+Pyrene_File54.use_resets 0
+Pyrene_File55.use_resets 0
+Pyrene_File56.use_resets 0
+Pyrene_File57.use_resets 0
+Pyrene_File58.use_resets 0
+Pyrene_File59.use_resets 0
+Pyrene_File60.use_resets 0
+Pyrene_File61.use_resets 0
+Pyrene_File62.use_resets 0
+Pyrene_File63.use_resets 0
+Pyrene_File64.use_resets 0
+Pyrene_File65.use_resets 0
+Pyrene_File66.use_resets 0
+Pyrene_File67.use_resets 0
+Pyrene_File68.use_resets 0
+Pyrene_File69.use_resets 0
+Pyrene_File70.use_resets 1
+Pyrene_File71.use_resets 0
+Pyrene_ResetTol 0.1
+
+Benzo_nFiles 72
+Benzo_File0.name contaminants01.nc
+Benzo_File1.name contaminants01.nc
+Benzo_File2.name contaminants01.nc
+Benzo_File3.name contaminants01.nc
+Benzo_File4.name contaminants01.nc
+Benzo_File5.name contaminants01.nc
+Benzo_File6.name contaminants01.nc
+Benzo_File7.name contaminants01.nc
+Benzo_File8.name contaminants01.nc
+Benzo_File9.name contaminants01.nc
+Benzo_File10.name contaminants01.nc
+Benzo_File11.name contaminants01.nc
+Benzo_File12.name contaminants01.nc
+Benzo_File13.name contaminants01.nc
+Benzo_File14.name contaminants01.nc
+Benzo_File15.name contaminants01.nc
+Benzo_File16.name contaminants01.nc
+Benzo_File17.name contaminants01.nc
+Benzo_File18.name contaminants01.nc
+Benzo_File19.name contaminants01.nc
+Benzo_File20.name contaminants01.nc
+Benzo_File21.name contaminants01.nc
+Benzo_File22.name contaminants01.nc
+Benzo_File23.name contaminants01.nc
+Benzo_File24.name contaminants01.nc
+Benzo_File25.name contaminants01.nc
+Benzo_File26.name contaminants01.nc
+Benzo_File27.name contaminants01.nc
+Benzo_File28.name contaminants01.nc
+Benzo_File29.name contaminants01.nc
+Benzo_File30.name contaminants01.nc
+Benzo_File31.name contaminants01.nc
+Benzo_File32.name contaminants01.nc
+Benzo_File33.name contaminants01.nc
+Benzo_File34.name contaminants01.nc
+Benzo_File35.name contaminants01.nc
+Benzo_File36.name contaminants01.nc
+Benzo_File37.name contaminants01.nc
+Benzo_File38.name contaminants01.nc
+Benzo_File39.name contaminants01.nc
+Benzo_File40.name contaminants01.nc
+Benzo_File41.name contaminants01.nc
+Benzo_File42.name contaminants01.nc
+Benzo_File43.name contaminants01.nc
+Benzo_File44.name contaminants01.nc
+Benzo_File45.name contaminants01.nc
+Benzo_File46.name contaminants01.nc
+Benzo_File47.name contaminants01.nc
+Benzo_File48.name contaminants01.nc
+Benzo_File49.name contaminants01.nc
+Benzo_File50.name contaminants01.nc
+Benzo_File51.name contaminants01.nc
+Benzo_File52.name contaminants01.nc
+Benzo_File53.name contaminants01.nc
+Benzo_File54.name contaminants01.nc
+Benzo_File55.name contaminants01.nc
+Benzo_File56.name contaminants01.nc
+Benzo_File57.name contaminants01.nc
+Benzo_File58.name contaminants01.nc
+Benzo_File59.name contaminants01.nc
+Benzo_File60.name contaminants01.nc
+Benzo_File61.name contaminants01.nc
+Benzo_File62.name contaminants01.nc
+Benzo_File63.name contaminants01.nc
+Benzo_File64.name contaminants01.nc
+Benzo_File65.name contaminants01.nc
+Benzo_File66.name contaminants01.nc
+Benzo_File67.name contaminants01.nc
+Benzo_File68.name contaminants01.nc
+Benzo_File69.name contaminants01.nc
+Benzo_File70.name contaminants02.nc
+Benzo_File71.name contaminants03.nc
+Benzo_rewind 0
+Benzo_File0.use_resets 0
+Benzo_File1.use_resets 0
+Benzo_File2.use_resets 0
+Benzo_File3.use_resets 0
+Benzo_File4.use_resets 0
+Benzo_File5.use_resets 0
+Benzo_File6.use_resets 0
+Benzo_File7.use_resets 0
+Benzo_File8.use_resets 0
+Benzo_File9.use_resets 0
+Benzo_File10.use_resets 0
+Benzo_File11.use_resets 0
+Benzo_File12.use_resets 0
+Benzo_File13.use_resets 0
+Benzo_File14.use_resets 0
+Benzo_File15.use_resets 0
+Benzo_File16.use_resets 0
+Benzo_File17.use_resets 0
+Benzo_File18.use_resets 0
+Benzo_File19.use_resets 0
+Benzo_File20.use_resets 0
+Benzo_File21.use_resets 0
+Benzo_File22.use_resets 0
+Benzo_File23.use_resets 0
+Benzo_File24.use_resets 0
+Benzo_File25.use_resets 0
+Benzo_File26.use_resets 0
+Benzo_File27.use_resets 0
+Benzo_File28.use_resets 0
+Benzo_File29.use_resets 0
+Benzo_File30.use_resets 0
+Benzo_File31.use_resets 0
+Benzo_File32.use_resets 0
+Benzo_File33.use_resets 0
+Benzo_File34.use_resets 0
+Benzo_File35.use_resets 0
+Benzo_File36.use_resets 0
+Benzo_File37.use_resets 0
+Benzo_File38.use_resets 0
+Benzo_File39.use_resets 0
+Benzo_File40.use_resets 0
+Benzo_File41.use_resets 0
+Benzo_File42.use_resets 0
+Benzo_File43.use_resets 0
+Benzo_File44.use_resets 0
+Benzo_File45.use_resets 0
+Benzo_File46.use_resets 0
+Benzo_File47.use_resets 0
+Benzo_File48.use_resets 0
+Benzo_File49.use_resets 0
+Benzo_File50.use_resets 0
+Benzo_File51.use_resets 0
+Benzo_File52.use_resets 0
+Benzo_File53.use_resets 0
+Benzo_File54.use_resets 0
+Benzo_File55.use_resets 0
+Benzo_File56.use_resets 0
+Benzo_File57.use_resets 0
+Benzo_File58.use_resets 0
+Benzo_File59.use_resets 0
+Benzo_File60.use_resets 0
+Benzo_File61.use_resets 0
+Benzo_File62.use_resets 0
+Benzo_File63.use_resets 0
+Benzo_File64.use_resets 0
+Benzo_File65.use_resets 0
+Benzo_File66.use_resets 0
+Benzo_File67.use_resets 0
+Benzo_File68.use_resets 0
+Benzo_File69.use_resets 0
+Benzo_File70.use_resets 1
+Benzo_File71.use_resets 0
+Benzo_ResetTol 0.1
+
+# Light and noise pollutants
+use_pollutantfiles 0

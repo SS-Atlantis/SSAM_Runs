@@ -1,0 +1,217 @@
+##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~##
+##           FORCING FILES        ##
+##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~##
+# input directories
+nhdfiles 1
+hd0.name SS_hydro.nc
+
+# Time reference. 1 uses date in hydro files as reference. 0 uses dates in the initial conditions files.
+ts_on_hydro_time 1
+
+# Frequency of inputs.ts and exports.ts output. Write out every 365 days.
+inputs_tout 365 days
+
+# Bottom stress
+# BottomStress inputs/stress/stress.nc
+# BottomStress inputs/stress/nxstress.nc
+
+use_VertMixFiles 0  ###*** New parameter 2018
+
+#############################################
+# Point source\sink lists
+npointss 0
+
+#############################################
+# Temperature time series file
+use_tempfiles 1
+ntempfiles 1
+Temperature0.name SS_temp.nc
+temp_rewind 1
+
+# Salinity time series data file
+use_saltfiles 1
+nsaltfiles 1
+Salinity0.name SS_salt.nc
+salt_rewind 1
+
+# Rain and evaporation
+#Precipitation inputs/meteor/times1.6.nc
+#Evaporation   inputs/meteor/84-95.nc
+
+#Solar time series run vicmpa file
+#Solar_radiation NewInputs/meteor/solar9195.ts
+#Solar_radiation_rewind 0
+
+use_phFiles 0
+use_VertMixFiles 0
+
+# Atmospheric pCO2 time series file
+# pCO2_forcing NewInputs/pCO2RCP45.ts
+
+# Recruitment_time_series
+
+# Recruitment_enviro_forcing
+
+
+#############################################
+# Historical catch lists - nCatchts is the number of time series to be loaded and
+# typeCatchts is whether or not the data is to be interpolated (0) by the model
+# or just use previous record (1)
+nCatchts 0
+typeCatchts 0
+
+#############################################
+# Historical discard lists
+nDiscardts 0
+typeDiscardts 0
+
+#############################################
+# Residual lists - on market fish prices
+nResidualsts 0
+typeResidualsts 0
+
+#############################################
+# Economic statistics - GDP and fuel costs
+nEconts 0
+typeEconts 0
+
+##############################################
+# MPA (spatial management) files for cases where change through time
+# Same format as Catchts above
+nMPAts 0
+typeMPAts 0
+
+
+###########################################################################################
+# Added by Bec Gorton 5th Feb 2018. Please check these values are valid.
+
+use_stressfiles 0
+
+
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+## ~      Adding contaminant tracers in the model       ~ ##
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+
+use_force_tracers 1
+use_weighted_assim 0
+
+# The number of tracers to search for in the files and the names of those tracers.
+nforceTracers 4
+tracerNames 4
+Naphthalene Phenanthrene Pyrene Benzo
+
+# Now the actual files. Can have more than one tracer in a file
+Naphthalene_nFiles 12
+Naphthalene_File0.name contaminants01.nc
+Naphthalene_File1.name contaminants01.nc
+Naphthalene_File2.name contaminants01.nc
+Naphthalene_File3.name contaminants01.nc
+Naphthalene_File4.name contaminants01.nc
+Naphthalene_File5.name contaminants01.nc
+Naphthalene_File6.name contaminants01.nc
+Naphthalene_File7.name contaminants01.nc
+Naphthalene_File8.name contaminants01.nc
+Naphthalene_File9.name contaminants01.nc
+Naphthalene_File10.name contaminants02.nc
+Naphthalene_File11.name contaminants03.nc
+Naphthalene_rewind 0
+Naphthalene_File0.use_resets 0
+Naphthalene_File1.use_resets 0
+Naphthalene_File2.use_resets 0
+Naphthalene_File3.use_resets 0
+Naphthalene_File4.use_resets 0
+Naphthalene_File5.use_resets 0
+Naphthalene_File6.use_resets 0
+Naphthalene_File7.use_resets 0
+Naphthalene_File8.use_resets 0
+Naphthalene_File9.use_resets 0
+Naphthalene_File10.use_resets 1
+Naphthalene_File11.use_resets 0
+Naphthalene_ResetTol 0.1
+
+Phenanthrene_nFiles 12
+Phenanthrene_File0.name contaminants01.nc
+Phenanthrene_File1.name contaminants01.nc
+Phenanthrene_File2.name contaminants01.nc
+Phenanthrene_File3.name contaminants01.nc
+Phenanthrene_File4.name contaminants01.nc
+Phenanthrene_File5.name contaminants01.nc
+Phenanthrene_File6.name contaminants01.nc
+Phenanthrene_File7.name contaminants01.nc
+Phenanthrene_File8.name contaminants01.nc
+Phenanthrene_File9.name contaminants01.nc
+Phenanthrene_File10.name contaminants02.nc
+Phenanthrene_File11.name contaminants03.nc
+Phenanthrene_rewind 0
+Phenanthrene_File0.use_resets 0
+Phenanthrene_File1.use_resets 0
+Phenanthrene_File2.use_resets 0
+Phenanthrene_File3.use_resets 0
+Phenanthrene_File4.use_resets 0
+Phenanthrene_File5.use_resets 0
+Phenanthrene_File6.use_resets 0
+Phenanthrene_File7.use_resets 0
+Phenanthrene_File8.use_resets 0
+Phenanthrene_File9.use_resets 0
+Phenanthrene_File10.use_resets 1
+Phenanthrene_File11.use_resets 0
+Phenanthrene_ResetTol 0.1
+
+Pyrene_nFiles 12
+Pyrene_File0.name contaminants01.nc
+Pyrene_File1.name contaminants01.nc
+Pyrene_File2.name contaminants01.nc
+Pyrene_File3.name contaminants01.nc
+Pyrene_File4.name contaminants01.nc
+Pyrene_File5.name contaminants01.nc
+Pyrene_File6.name contaminants01.nc
+Pyrene_File7.name contaminants01.nc
+Pyrene_File8.name contaminants01.nc
+Pyrene_File9.name contaminants01.nc
+Pyrene_File10.name contaminants02.nc
+Pyrene_File11.name contaminants03.nc
+Pyrene_rewind 0
+Pyrene_File0.use_resets 0
+Pyrene_File1.use_resets 0
+Pyrene_File2.use_resets 0
+Pyrene_File3.use_resets 0
+Pyrene_File4.use_resets 0
+Pyrene_File5.use_resets 0
+Pyrene_File6.use_resets 0
+Pyrene_File7.use_resets 0
+Pyrene_File8.use_resets 0
+Pyrene_File9.use_resets 0
+Pyrene_File10.use_resets 1
+Pyrene_File11.use_resets 0
+Pyrene_ResetTol 0.1
+
+Benzo_nFiles 12
+Benzo_File0.name contaminants01.nc
+Benzo_File1.name contaminants01.nc
+Benzo_File2.name contaminants01.nc
+Benzo_File3.name contaminants01.nc
+Benzo_File4.name contaminants01.nc
+Benzo_File5.name contaminants01.nc
+Benzo_File6.name contaminants01.nc
+Benzo_File7.name contaminants01.nc
+Benzo_File8.name contaminants01.nc
+Benzo_File9.name contaminants01.nc
+Benzo_File10.name contaminants02.nc
+Benzo_File11.name contaminants03.nc
+Benzo_rewind 0
+Benzo_File0.use_resets 0
+Benzo_File1.use_resets 0
+Benzo_File2.use_resets 0
+Benzo_File3.use_resets 0
+Benzo_File4.use_resets 0
+Benzo_File5.use_resets 0
+Benzo_File6.use_resets 0
+Benzo_File7.use_resets 0
+Benzo_File8.use_resets 0
+Benzo_File9.use_resets 0
+Benzo_File10.use_resets 1
+Benzo_File11.use_resets 0
+Benzo_ResetTol 0.1
+
+# Light and noise pollutants
+use_pollutantfiles 0
