@@ -9,7 +9,7 @@ check_dups    	    0   # click 1 to check for duplicated params
 flag_replicated_old 0   # Whether reproducing old code quirks
 
 flagecon_on         0   # Flag showing whether want economics loaded and submodel run (1) or not (0)
-flag_fisheries_on   0   # Flag showing whether want fisheries loaded and submodel run (1) or not (0)
+flag_fisheries_on   1   # Flag showing whether want fisheries loaded and submodel run (1) or not (0)
 flag_skip_biol      0   # Flag showing whether want biological model; If 1 the Ecology submodel is not loaded only for debugging!
 flag_skip_phys      0   # Flag showing whether want biological model run (0) or not (1 - only used when debugging fisheries)
 
@@ -44,7 +44,7 @@ checkNH       0        # Give detailed logged output for NH in checkbox
 checkDL       0        # Give detailed logged output for DL in checkbox
 checkDR       0        # Give detailed logged output for DR in checkbox
 checkbiom     0        # Give detailed logged output for biomasses in checkbox
-which_check   0        # ID number of group to track (if don't want to track anything set to 80 (for other groups see list below)
+which_check   110        # ID number of group to track (if don't want to track anything set to 80 (for other groups see list below)
 habitat_check 0
 which_fleet   33       # ID number of fleet to track (if don't want to track anything set to 33 (for other fleets see list below)
 move_check    67       # ID number of group where tracking movements  (if don't want to track anything set it to 67, for other groups see list below)
@@ -70,7 +70,7 @@ toutinc    90 day    # Write output with this periodicity: 1yr run = 1 day; 5 ye
 toutfinc   365 day     # Write fisheries output with this periodicity
 
 tsumout    365 day     # Write stock state summary with this periodicity; migration debug
-fishout    0          # Switch to turn fisheries output on = 1, off = 0
+fishout    1          # Switch to turn fisheries output on = 1, off = 0
 flagreusefile 2        # Switch to show want to append output file no = 0, yes = 1, replace = 2
 flagannual_Mest 1      # Write out mortality per predator annually (1) or not (0) #
 
@@ -98,6 +98,7 @@ K_max_num_zoning  1    # Maximum number of spatial zonings used in the model
 K_num_markets     1    # Maxiumum number of markets in the model area
 K_num_reg   1
 K_num_catchqueue  7
+K_num_basket 1
 
 # Location parameters
 flaghemisphere    1    # Flag for hemisphere model is in (0 = southern; 1 = northern)
