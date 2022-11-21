@@ -22,7 +22,7 @@ mirror_invalid      0   # Flag indicating whether want the model to estimate sou
 track_contaminants  0   # Whether tracking contaminants or not
 flagpassivetracer   0   # Flag indicating whether a passive tracer is needed for tracking tranpsorts or not (1 = yes, 0 = no)
 flag_sanity_check   1   # flag to check for the large vertebrate reproduction bug
-flag_contam_sanity_check 1   # flag to turn on checking of contaminant fluxes
+flag_contam_sanity_check 0   # flag to turn on checking of contaminant fluxes
 
 flagenviro_warn     1   # Flag indicating that whether want warnings about environmental constraints on movement recorded to the logfile 
 flag_old_embryo_init        0
@@ -55,7 +55,7 @@ debug         0        # 0=debuging off, 1=debug fishing, 2=debug discards, 3=de
                        # 12=debug migration, 13=debug movement, 14=debug stocks,
                        # 15=debug biomass calcs, 16=debug feeding, 17=debug everything
 
-flag_age_output  1     # 1 = age structured overall biomass output desired, 0 = off     **
+flag_age_output  1     # 1 = age structured overall biomass output desired, 0 = off     **/spreadsheets/d/1z4CkgIRV6rxS4AVmXgtsu-pOBb0rllxs/edit
 
 debug_it      0
 flagIsEstuary 0
@@ -64,13 +64,13 @@ tburnday      0
 
 title      SalishSea model run
 dt         12 hour    # 12 hour time step
-tstop      18250 day   # Stop time after the given period (1822 = 5; 3650=10; 5475=15; 7300=20, 18250 = 50, 27375 = 75, 32850 = 90)
+tstop      12775 day   # Stop time after the given period (1822 = 5; 3650=10; 5475=15; 7300=20, 12775 = 35, 18250 = 50)
 toutstart  0 day      # Output start time
 toutinc    90 day    # Write output with this periodicity: 1yr run = 1 day; 5 year = 30; 20 year = 91 days
 toutfinc   365 day     # Write fisheries output with this periodicity
 
 tsumout    365 day     # Write stock state summary with this periodicity; migration debug
-fishout    1          # Switch to turn fisheries output on = 1, off = 0
+fishout    0          # Switch to turn fisheries output on = 1, off = 0
 flagreusefile 2        # Switch to show want to append output file no = 0, yes = 1, replace = 2
 flagannual_Mest 1      # Write out mortality per predator annually (1) or not (0) #
 
