@@ -1,7 +1,7 @@
 run id: SS-Atlantis
 
 paths:
-  atlantis code: /ocean/$USER/Atlantis/atlantis-trunk/atlantis_v6645
+  atlantis code: /ocean/$USER/Atlantis/atlantis-trunk/atlantis_v6655
   atlantis executable name: atlantisMerged
   runs directory: /ocean/$USER/Atlantis/SSAM_Runs/
   atlantis command: $HOME/conda_envs/atlantis-cmd/bin/atlantis
@@ -10,21 +10,21 @@ paths:
 # global attributes of the initial conditions file.
 boxes: /ocean/$USER/Atlantis/SSAM_Runs/AtlantisContamFiles/SS_xy.bgm
 
-initial conditions: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_init_contam_BF.nc
+initial conditions: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_init_contam_BF3.nc
 
-groups: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_grps2.csv
+groups: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_grps.csv
 
-migrations: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SalishMigrations_v2_2.csv
+migrations: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_migrations.csv
 
 fisheries: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_fisheries.csv
 
 parameters:
-  # The run, forcing, physics, and biology parameters files are required for all runs,
+  # The run, forcing, physics, biology, and harvest parameters files are required for all runs,
   # and they must be identified by those exact keys.
   run: /ocean/$USER/Atlantis/SSAM_Runs/SS_run_contam.prm
-  forcing: /ocean/$USER/Atlantis/SSAM_Runs/SS_forcing_contam_1961spill.prm
+  forcing: /ocean/$USER/Atlantis/SSAM_Runs/SS_forcing_contam_2020spill.prm
   physics: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_physics.prm
-  biology: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_biology_BF_01.prm
+  biology: /ocean/$USER/Atlantis/salish-sea-atlantis-model/01SS_biology.prm
   harvest: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_harvest.prm
 
 forcing:
