@@ -24,7 +24,7 @@ parameters:
   run: /ocean/$USER/Atlantis/SSAM_Runs/SS_run_contam.prm
   forcing: /ocean/$USER/Atlantis/SSAM_Runs/SS_forcing_contam_2020spill.prm
   physics: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_physics.prm
-  biology: /ocean/$USER/Atlantis/salish-sea-atlantis-model/01SS_biology copy.prm
+  biology: /ocean/$USER/Atlantis/salish-sea-atlantis-model/01SS_biology copy linear.prm
   harvest: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_harvest.prm
 
 forcing:
