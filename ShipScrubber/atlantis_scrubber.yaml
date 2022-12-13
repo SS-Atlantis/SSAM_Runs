@@ -12,7 +12,7 @@ boxes: /ocean/$USER/Atlantis/ShipScrubber/SS_xy.bgm
 
 initial conditions: /ocean/$USER/Atlantis/ShipScrubber/SS_init.nc
 
-groups: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_grps.csv
+groups: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_grps_annual.csv
 
 migrations: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_migrations.csv
 
