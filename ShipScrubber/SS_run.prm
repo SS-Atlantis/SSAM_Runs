@@ -29,6 +29,7 @@ flag_old_embryo_init        0
 flag_replicate_old_calendar 0
 external_populations        0
 flag_multiyr_migs           1
+flag_mig_in_bioindx         1
 store_aggregate_yoy         1
 store_mig_array             1
 
