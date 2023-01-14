@@ -1,3 +1,3 @@
 #!/bin/bash
 
-atlantis run ./atlantis_scrubber.yaml /ocean/rlovindeer/MOAD/analysis-raisha/SSmodel_outputs/Scrubber_discharge_2019-2029_02
+atlantis run ./atlantis_scrubber.yaml /ocean/rlovindeer/MOAD/analysis-raisha/SSmodel_outputs/Scrubber_discharge_2019_highres_mort
