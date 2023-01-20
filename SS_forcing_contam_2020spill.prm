@@ -101,7 +101,7 @@ tracerNames 4
 Naphthalene Phenanthrene Pyrene Benzo
 
 # Now the actual files. Can have more than one tracer in a file
-Naphthalene_nFiles 30
+Naphthalene_nFiles 29
 Naphthalene_File0.name contaminants01.nc
 Naphthalene_File1.name contaminants01.nc
 Naphthalene_File2.name contaminants01.nc
@@ -129,9 +129,8 @@ Naphthalene_File23.name contaminants01.nc
 Naphthalene_File24.name contaminants01.nc
 Naphthalene_File25.name contaminants01.nc
 Naphthalene_File26.name contaminants01.nc
-Naphthalene_File27.name contaminants01.nc
-Naphthalene_File28.name contaminants02.nc
-Naphthalene_File29.name contaminants03.nc
+Naphthalene_File27.name contaminants02.nc
+Naphthalene_File28.name contaminants03.nc
 Naphthalene_rewind 0
 Naphthalene_File0.use_resets 0
 Naphthalene_File1.use_resets 0
@@ -160,12 +159,11 @@ Naphthalene_File23.use_resets 0
 Naphthalene_File24.use_resets 0
 Naphthalene_File25.use_resets 0
 Naphthalene_File26.use_resets 0
-Naphthalene_File27.use_resets 0
-Naphthalene_File28.use_resets 1
-Naphthalene_File29.use_resets 0
+Naphthalene_File27.use_resets 1
+Naphthalene_File28.use_resets 0
 Naphthalene_ResetTol 0.1
 
-Phenanthrene_nFiles 30
+Phenanthrene_nFiles 29
 Phenanthrene_File0.name contaminants01.nc
 Phenanthrene_File1.name contaminants01.nc
 Phenanthrene_File2.name contaminants01.nc
@@ -193,9 +191,8 @@ Phenanthrene_File23.name contaminants01.nc
 Phenanthrene_File24.name contaminants01.nc
 Phenanthrene_File25.name contaminants01.nc
 Phenanthrene_File26.name contaminants01.nc
-Phenanthrene_File27.name contaminants01.nc
-Phenanthrene_File28.name contaminants02.nc
-Phenanthrene_File29.name contaminants03.nc
+Phenanthrene_File27.name contaminants02.nc
+Phenanthrene_File28.name contaminants03.nc
 Phenanthrene_rewind 0
 Phenanthrene_File0.use_resets 0
 Phenanthrene_File1.use_resets 0
@@ -224,12 +221,11 @@ Phenanthrene_File23.use_resets 0
 Phenanthrene_File24.use_resets 0
 Phenanthrene_File25.use_resets 0
 Phenanthrene_File26.use_resets 0
-Phenanthrene_File27.use_resets 0
-Phenanthrene_File28.use_resets 1
-Phenanthrene_File29.use_resets 0
+Phenanthrene_File27.use_resets 1
+Phenanthrene_File28.use_resets 0
 Phenanthrene_ResetTol 0.1
 
-Pyrene_nFiles 30
+Pyrene_nFiles 29
 Pyrene_File0.name contaminants01.nc
 Pyrene_File1.name contaminants01.nc
 Pyrene_File2.name contaminants01.nc
@@ -257,9 +253,8 @@ Pyrene_File23.name contaminants01.nc
 Pyrene_File24.name contaminants01.nc
 Pyrene_File25.name contaminants01.nc
 Pyrene_File26.name contaminants01.nc
-Pyrene_File27.name contaminants01.nc
-Pyrene_File28.name contaminants02.nc
-Pyrene_File29.name contaminants03.nc
+Pyrene_File27.name contaminants02.nc
+Pyrene_File28.name contaminants03.nc
 Pyrene_rewind 0
 Pyrene_File0.use_resets 0
 Pyrene_File1.use_resets 0
@@ -288,12 +283,11 @@ Pyrene_File23.use_resets 0
 Pyrene_File24.use_resets 0
 Pyrene_File25.use_resets 0
 Pyrene_File26.use_resets 0
-Pyrene_File27.use_resets 0
-Pyrene_File28.use_resets 1
-Pyrene_File29.use_resets 0
+Pyrene_File27.use_resets 1
+Pyrene_File28.use_resets 0
 Pyrene_ResetTol 0.1
 
-Benzo_nFiles 30
+Benzo_nFiles 29
 Benzo_File0.name contaminants01.nc
 Benzo_File1.name contaminants01.nc
 Benzo_File2.name contaminants01.nc
@@ -321,9 +315,8 @@ Benzo_File23.name contaminants01.nc
 Benzo_File24.name contaminants01.nc
 Benzo_File25.name contaminants01.nc
 Benzo_File26.name contaminants01.nc
-Benzo_File27.name contaminants01.nc
-Benzo_File28.name contaminants02.nc
-Benzo_File29.name contaminants03.nc
+Benzo_File27.name contaminants02.nc
+Benzo_File28.name contaminants03.nc
 Benzo_rewind 0
 Benzo_File0.use_resets 0
 Benzo_File1.use_resets 0
@@ -352,9 +345,8 @@ Benzo_File23.use_resets 0
 Benzo_File24.use_resets 0
 Benzo_File25.use_resets 0
 Benzo_File26.use_resets 0
-Benzo_File27.use_resets 0
-Benzo_File28.use_resets 1
-Benzo_File29.use_resets 0
+Benzo_File27.use_resets 1
+Benzo_File28.use_resets 0
 Benzo_ResetTol 0.1
 
 # Light and noise pollutants
