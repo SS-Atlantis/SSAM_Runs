@@ -20,7 +20,7 @@ fisheries: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_fisheries.csv
 parameters:
   # The run, forcing, physics, biology, and harvest parameters files are required for all runs,
   # and they must be identified by those exact keys.
-  run: /ocean/$USER/Atlantis/SSAM_Runs/ShipScrubber/SS_run_highres.prm
+  run: /ocean/$USER/Atlantis/SSAM_Runs/ShipScrubber/SS_run.prm
   forcing: /ocean/$USER/Atlantis/SSAM_Runs/ShipScrubber/SS_forcing2019.prm
   physics: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_physics.prm
   biology: /ocean/$USER/Atlantis/salish-sea-atlantis-model/01SS_biology_linear_per_day.prm
@@ -40,7 +40,7 @@ forcing:
   contaminants01.nc:
     link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/contam_SSAtlantis_year_of_zero.nc
   contaminants02.nc:
-    link to: /ocean/$USER/Atlantis/ShipScrubber/Atlantis_Scrubber_PAH_2019.nc
+    link to: /ocean/$USER/Atlantis/ShipScrubber/Atlantis_Scrubber_PAH_2019_1000.nc
   contaminants03.nc:
     link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/contam_SSAtlantis_dummy.nc
     

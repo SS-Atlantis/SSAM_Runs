@@ -19,7 +19,7 @@ track_rugosity_arag 1   # flag indicating that rugosity and aragonite saturation
 track_pH            1   # flag indicating that pH to be tracked
 flag_use_deltaH     0   # Flag to use dH for calculation of acidification
 mirror_invalid      0   # Flag indicating whether want the model to estimate source destinations of hydrodynamics if have invalide feed data (1) or not (0)
-track_contaminants  0   # Whether tracking contaminants or not
+track_contaminants  1   # Whether tracking contaminants or not
 flagpassivetracer   0   # Flag indicating whether a passive tracer is needed for tracking tranpsorts or not (1 = yes, 0 = no)
 flag_sanity_check   1   # flag to check for the large vertebrate reproduction bug
 flag_contam_sanity_check 0   # flag to turn on checking of contaminant fluxes
@@ -45,7 +45,7 @@ checkNH       0        # Give detailed logged output for NH in checkbox
 checkDL       0        # Give detailed logged output for DL in checkbox
 checkDR       0        # Give detailed logged output for DR in checkbox
 checkbiom     0        # Give detailed logged output for biomasses in checkbox
-which_check   56        # ID number of group to track (if don't want to track anything set to 80 (for other groups see list below)
+which_check   55        # ID number of group to track (if don't want to track anything set to 80 (for other groups see list below)
 habitat_check 0
 which_fleet   33       # ID number of fleet to track (if don't want to track anything set to 33 (for other fleets see list below)
 move_check    67       # ID number of group where tracking movements  (if don't want to track anything set it to 67, for other groups see list below)
@@ -73,7 +73,7 @@ toutfinc   1 day     # Write fisheries output with this periodicity
 tsumout    1 day     # Write stock state summary with this periodicity; migration debug
 fishout    0          # Switch to turn fisheries output on = 1, off = 0
 flagreusefile 2        # Switch to show want to append output file no = 0, yes = 1, replace = 2
-flagannual_Mest 0      # Write out mortality per predator annually (1) or not (0) #
+flagannual_Mest 1      # Write out mortality per predator annually (1) or not (0) #
 
 # Parameters defining the numbers of certain types of groups (needed to  parameter arrays in the
 # initialisation section of the model, best left untouched for now)
@@ -132,65 +132,65 @@ mgPAH/m^3
 flag_pollutant_impacts 0
 
 ################################################
-# List of functional groups (58)
-#	1	Pacific_herring		FHE
-#	2	Small_pelagic_fish	FPS
-#	3	Sandlance		FSA
-#	4	Chinook_salmon		FCH
-#	5	Coho_salmon		FCO
-#	6	Sockeye_salmon		FSS
-#	7	Pink_salmon		FPI
-#	8	Chum_salmon		FCU
-#	9	Other_salmonids		SO
-#	10	Hatchery_Chinook_salmon	HCH
-#	11	Hatchery_Coho_salmon	HCO
-#	12	Hatchery_Sockeye_salmon	HSS
-#	13	Hake			FHK
-#	14	Pollock			FPO
-#	15	Lingcod			FLC
-#	16	Benthopelagic		FBP
-#	17	Small_Demersal_fish	FDS
-#	18	Large_Demersal_fish	FDL
-#	19	Rockfish		FRO
-#	20	Small Flatfish		FFS
-#	21	Large Flatfish		FFL
-#	22	Dogfish			SHD
-#	23	Sixgill			SHS
-#	24	Ratfish			SRA
-#	25	Skates			SSK
-#	26	Seabirds gulls		SB
-#	27	Seabirds		SP
-#	28	Sealions		CSL
-#	29	Harbor_seals		HSL
-#	30	Harbor_porpoise		PHR
-#	31	Orcas_Resident		ORR
-#	32	Orcas_Transient		ORT
-#	33	Humpbacks whale		WHB
-#	34	Crabs			BRL
-#	35	Dungeness_crabs		DCR
-#	36	Bivalves		BIV
-#	37	Squid			CEP
-#	38	Filter_feeder		BFF
-#	39	Sponges			SPH
-#	40	Benthic_grazer		BG
-#	41	Macrobenthos		BMD/S
-#	42	Prawn/shrimp		PWN
-#	43	Deposit_Feeder		BD
-#	44	Benthic_Carniv		BC
-#	45	Macroalgae		MA
-#	46	Seagrass		SG
-#	47	Gelat_Zoo		ZG
-#	48	Diatom			PL
-#	49	PicoPhytopl		PS
-#	50	Carniv_Zoo		ZL
-#	51	Zoo			ZM
-#	52	MicroZoo		ZS
-#	53	Pelag_Bact		PB
-#	54	Sed_Bact		BB
-#	55	Meiobenth		BO
-#	56	Lab_Det			DL
-#	57	Ref_Det			DR
-#	58	Carrion			DC
+# List of functional groups (58)				
+#	0	Pacific_herring		FHE
+#	1	Small_pelagic_fish  FPS
+#	2	Sandlance		    FSA
+#	3	Chinook_salmon		FCH
+#	4	Coho_salmon		    FCO
+#	5	Sockeye_salmon		FSS
+#	6	Pink_salmon		    FPI
+#	7	Chum_salmon		    FCU
+#	8	Other_salmonids		SO
+#	9	Hatchery_Chinook_salmon		HCH
+#	10	Hatchery_Coho_salmon		HCO
+#	11	Hatchery_Sockeye_salmon		HSS
+#	12	Hake		        FHK
+#	13	Pollock		        FPO
+#	14	Lingcod		        FLC
+#	15	Benthopelagic		FBP
+#	16	Small_Demersal_fish	FDS
+#	17	Large_Demersal_fish	FDL
+#	18	Rockfish		    FRO
+#	19	Small Flatfish		FFS
+#	20	Large Flatfish		FFL
+#	21	Dogfish		        SHD
+#	22	Sixgill		        SHS
+#	23	Ratfish		        SRA
+#	24	Skates		        SSK
+#	25	Seabirds gulls		SB
+#	26	Seabirds		    SP
+#	27	Sealions		    CSL
+#	28	Harbor_seals		HSL
+#	29	Harbor_porpoise		PHR
+#	30	Orcas_Resident		ORR
+#	31	Orcas_Transient		ORT
+#	32	Humpbacks whale		WHB
+#	33	Crabs		        BRL
+#	34	Dungeness_crabs		DCR
+#	35	Bivalves		    BIV
+#	36	Squid		        CEP
+#	37	Filter_feeder		BFF
+#	38	Sponges		        SPH
+#	39	Benthic_grazer		BG
+#	40	Macrobenthos		BMD/S
+#	41	Prawn/shrimp		PWN
+#	42	Deposit_Feeder		BD
+#	43	Benthic_Carniv		BC
+#	44	Macroalgae		MA
+#	45	Seagrass		SG
+#	46	Gelat_Zoo	ZG
+#	47	Diatom		PL
+#	48	PicoPhytopl	PS
+#	49	Carniv_Zoo	ZL
+#	50	Zoo		    ZM
+#	51	MicroZoo	ZS
+#	52	Pelag_Bact	PB
+#	53	Sed_Bact	BB
+#	54	Meiobenth	BO
+#	55	Lab_Det		DL
+#	56	Ref_Det		DR
+#	57	Carrion		DC
 #
 ################################################
 # List of fishery numbers for use with which_check
