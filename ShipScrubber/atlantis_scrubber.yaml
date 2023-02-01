@@ -40,7 +40,7 @@ forcing:
   contaminants01.nc:
     link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/contam_SSAtlantis_year_of_zero.nc
   contaminants02.nc:
-    link to: /ocean/$USER/Atlantis/ShipScrubber/Atlantis_Scrubber_PAH_2019_1000.nc
+    link to: /ocean/$USER/Atlantis/ShipScrubber/Atlantis_Scrubber_PAH_2019_500.nc
   contaminants03.nc:
     link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/contam_SSAtlantis_dummy.nc
     
