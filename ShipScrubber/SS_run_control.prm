@@ -1,6 +1,6 @@
 # March - August 2019, Heidi Pethybridge
 # Updated July 2020, Javier Porobic
-# Updated Jan 2023, Beth Fulton & Raisha Lovindeer
+# Updated May 2022, Beth Fulton & Raisha Lovindeer
 # Salish Sea Atlantis model run file
 #############################################
 # Run parameters
@@ -65,7 +65,7 @@ tburnday      0
 
 title      SalishSea model run
 dt         12 hour    # 12 hour time step
-tstop      36500 day   # Stop time after the given period (1822 = 5; 3650=10; 5475=15; 7300=20, 12775 = 35, 18250 = 50)
+tstop      36500 day   # Stop time after the given period (1822 = 5; 3650=10; 5475=15; 7300=20, 18250 = 50, 21550 = year 2050)
 toutstart  0 day      # Output start time
 toutinc    90 day    # Write output with this periodicity: 1yr run = 1 day; 5 year = 30; 20 year = 91 days
 toutfinc   365 day     # Write fisheries output with this periodicity
@@ -121,13 +121,13 @@ K_max_active_cities 0
 K_num_oil_companies 0
 
 # Contaminant information (only used when track_contaminants set to 1)
-num_contaminants  4
+num_contaminants  1
 
-contaminant_names 4
-Naphthalene Phenanthrene Pyrene Benzo
+contaminant_names 1
+Phenanthrene
 
-contaminant_units 4
-mgPAH/m^3 mgPAH/m^3 mgPAH/m^3 mgPAH/m^3
+contaminant_units 1
+mgPAH/m^3
 
 flag_pollutant_impacts 0
 
