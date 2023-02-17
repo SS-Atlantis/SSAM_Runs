@@ -3,7 +3,7 @@ run id: SS-Atlantis
 paths:
   atlantis code: /ocean/$USER/Atlantis/atlantis-trunk/atlantis_v6666
   atlantis executable name: atlantisMerged
-  runs directory: /ocean/$USER/Atlantis/SSAM_Runs
+  runs directory: /ocean/$USER/Atlantis/SSAM_Runs/LivingLabs
   atlantis command: $HOME/conda_envs/atlantis-cmd/bin/atlantis
 
 # The name of the boxes .bgm file must match the value of the "geometry" attribute in the
@@ -21,9 +21,9 @@ parameters:
   # The run, forcing, physics, biology, and harvest parameters files are required for all runs,
   # and they must be identified by those exact keys.
   run: /ocean/$USER/Atlantis/SSAM_Runs/LivingLabs/SS_run_livinglabs.prm
-  forcing: /ocean/$USER/Atlantis/SSAM_Runs/LivingLabs/SS_forcing_livinglabs_control.prm
+  forcing: /ocean/$USER/Atlantis/SSAM_Runs/LivingLabs/SS_forcing_livinglabs_control.prm # _control
   physics: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_physics.prm
-  biology: /ocean/$USER/Atlantis/salish-sea-atlantis-model/01SS_biology_livinglabs_heatwave.prm
+  biology: /ocean/$USER/Atlantis/salish-sea-atlantis-model/01SS_biology_livinglabs_SSP585.prm # _control _heatwave
   harvest: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_harvest.prm
 
 forcing:
@@ -37,8 +37,6 @@ forcing:
     link to: /ocean/$USER/Atlantis/Physics/Final/SS_temp_07-21.nc
   SS_salt.nc:
     link to: /ocean/$USER/Atlantis/Physics/Final/SS_salt_07-21.nc
-  pCO2forcing.ts:
-    link to: /ocean/$USER/Atlantis/SSAM_Runs/LivingLabs/pCO2RCP85.ts
   
 output filename base: outputSalishSea
 
