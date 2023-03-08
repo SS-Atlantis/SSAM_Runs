@@ -21,9 +21,9 @@ parameters:
   # The run, forcing, physics, biology, and harvest parameters files are required for all runs,
   # and they must be identified by those exact keys.
   run: /ocean/$USER/Atlantis/SSAM_Runs/LivingLabs/SS_run_livinglabs.prm
-  forcing: /ocean/$USER/Atlantis/SSAM_Runs/LivingLabs/SS_forcing_livinglabs_control.prm # _control
+  forcing: /ocean/$USER/Atlantis/SSAM_Runs/LivingLabs/SS_forcing_livinglabs.prm
   physics: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_physics.prm
-  biology: /ocean/$USER/Atlantis/salish-sea-atlantis-model/01SS_biology_livinglabs_heatwave.prm # _control _heatwave
+  biology: /ocean/$USER/Atlantis/salish-sea-atlantis-model/01SS_biology_livinglabs_climate.prm # _control _heatwave _climate
   harvest: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_harvest.prm
 
 forcing:
@@ -34,7 +34,7 @@ forcing:
   SS_hydro.nc:
     link to: /ocean/$USER/Atlantis/Physics/Final/SS_hydro_07-21.nc
   SS_temp.nc:
-    link to: /ocean/$USER/Atlantis/Physics/Final/SS_temp_07-21.nc
+    link to: /ocean/$USER/Atlantis/Physics/Final/SS_temp_adjusted.nc
   SS_salt.nc:
     link to: /ocean/$USER/Atlantis/Physics/Final/SS_salt_07-21.nc
   
