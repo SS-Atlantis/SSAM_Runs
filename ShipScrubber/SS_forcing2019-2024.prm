@@ -102,7 +102,7 @@ Phenanthrene
 
 # Now the actual files. Can have more than one tracer in a file
 
-Phenanthrene_nFiles 32
+Phenanthrene_nFiles 31
 Phenanthrene_File0.name contaminants01.nc
 Phenanthrene_File1.name contaminants01.nc
 Phenanthrene_File2.name contaminants01.nc
@@ -129,12 +129,11 @@ Phenanthrene_File22.name contaminants01.nc
 Phenanthrene_File23.name contaminants01.nc
 Phenanthrene_File24.name contaminants01.nc
 Phenanthrene_File25.name contaminants01.nc
-Phenanthrene_File26.name contaminants01.nc
+Phenanthrene_File26.name contaminants02.nc
 Phenanthrene_File27.name contaminants02.nc
 Phenanthrene_File28.name contaminants02.nc
 Phenanthrene_File29.name contaminants02.nc
 Phenanthrene_File30.name contaminants02.nc
-Phenanthrene_File31.name contaminants02.nc
 Phenanthrene_rewind 0
 Phenanthrene_File0.use_resets 0
 Phenanthrene_File1.use_resets 0
@@ -167,7 +166,6 @@ Phenanthrene_File27.use_resets 0
 Phenanthrene_File28.use_resets 0
 Phenanthrene_File29.use_resets 0
 Phenanthrene_File30.use_resets 0
-Phenanthrene_File31.use_resets 0
 
 Phenanthrene_ResetTol 0.1
 
