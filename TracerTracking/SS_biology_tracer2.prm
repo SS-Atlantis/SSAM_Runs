@@ -10780,13 +10780,13 @@ FSPB_CEP        1
 # Aquaculture stocking distribution - for vertebrates this overwrites hdistrib
 #HCO_aquacult_hdistrib 130
 
-HCH_aquacult_hdistrib  130 #Hatch_Chinook
+HCH_recruit_hdistrib  130 #Hatch_Chinook
 0.000 0.008 0.008 0.008 0.008 0.008 0.008 0.008 0.008 0.008 0.008 0.008 0.000 0.008 0.008 0.025 0.008 0.000 0.025 0.009 0.008 0.008 0.000 0.009 0.000 0.000 0.009 0.000 0.009 0.000 0.000 0.009 0.009 0.013 0.013 0.013 0.013 0.013 0.013 0.013 0.013 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.025 0.025 0.000 0.013 0.013 0.000 0.013 0.000 0.013 0.013 0.013 0.000 0.013 0.000 0.013 0.000 0.000 0.000 0.025 0.025 0.025 0.025 0.000 0.000 0.000 0.006 0.006 0.006 0.006 0.006 0.006 0.006 0.006 0.000 0.006 0.000 0.006 0.006 0.006 0.000 0.006 0.000 0.006 0.000 0.006 0.000 0.000 0.006 0.006 0.020 0.020 0.020 0.020 0.020 0.013 0.013 0.000 0.013 0.013 0.013 0.013 0.013 0.013 0.013 0.013 0.013 0.013 0.013 0.013 0.013 0.013 0.000 0.000 0.000 0.000 0.000
 
-HCO_aquacult_hdistrib  130 #Hatch_coho
+HCO_recruit_hdistrib  130 #Hatch_coho
 0.000 0.008 0.008 0.008 0.008 0.008 0.008 0.008 0.008 0.008 0.008 0.008 0.000 0.008 0.008 0.025 0.008 0.000 0.025 0.009 0.008 0.008 0.000 0.009 0.000 0.000 0.009 0.000 0.009 0.000 0.000 0.009 0.009 0.013 0.013 0.013 0.013 0.013 0.013 0.013 0.013 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.025 0.025 0.000 0.013 0.013 0.000 0.013 0.000 0.013 0.013 0.013 0.000 0.013 0.000 0.013 0.000 0.000 0.000 0.025 0.025 0.025 0.025 0.000 0.000 0.000 0.006 0.006 0.006 0.006 0.006 0.006 0.006 0.006 0.000 0.006 0.000 0.006 0.006 0.006 0.000 0.006 0.000 0.006 0.000 0.006 0.000 0.000 0.006 0.006 0.020 0.020 0.020 0.020 0.020 0.013 0.013 0.000 0.013 0.013 0.013 0.013 0.013 0.013 0.013 0.013 0.013 0.013 0.013 0.013 0.013 0.013 0.000 0.000 0.000 0.000 0.000
 
-HSS_aquacult_hdistrib   130 #Hatch_Sockeye
+HSS_recruit_hdistrib   130 #Hatch_Sockeye
 0.000 0.008 0.008 0.008 0.008 0.008 0.008 0.008 0.008 0.008 0.008 0.008 0.000 0.008 0.008 0.025 0.008 0.000 0.025 0.009 0.008 0.008 0.000 0.009 0.000 0.000 0.009 0.000 0.009 0.000 0.000 0.009 0.009 0.013 0.013 0.013 0.013 0.013 0.013 0.013 0.013 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.025 0.025 0.000 0.013 0.013 0.000 0.013 0.000 0.013 0.013 0.013 0.000 0.013 0.000 0.013 0.000 0.000 0.000 0.025 0.025 0.025 0.025 0.000 0.000 0.000 0.006 0.006 0.006 0.006 0.006 0.006 0.006 0.006 0.000 0.006 0.000 0.006 0.006 0.006 0.000 0.006 0.000 0.006 0.000 0.006 0.000 0.000 0.006 0.006 0.020 0.020 0.020 0.020 0.020 0.013 0.013 0.000 0.013 0.013 0.013 0.013 0.013 0.013 0.013 0.013 0.013 0.013 0.013 0.013 0.013 0.013 0.000 0.000 0.000 0.000 0.000
 
 FHE_recruit_hdistrib  130 #Herring
@@ -12865,7 +12865,7 @@ Benzo_temp_depend 1
 contam_tau 0.11
 
 ## ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
-## Uptake model
+## Uptake model - 1 linear, 2 sigmoid
 ## ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
 FHE_Naphthalene_uptake_option 1
 FPS_Naphthalene_uptake_option 1
@@ -12914,8 +12914,8 @@ BC_Naphthalene_uptake_option 1
 MA_Naphthalene_uptake_option 2
 SG_Naphthalene_uptake_option 2
 ZG_Naphthalene_uptake_option 1
-PL_Naphthalene_uptake_option 2
-PS_Naphthalene_uptake_option 2
+PL_Naphthalene_uptake_option 1
+PS_Naphthalene_uptake_option 1
 ZL_Naphthalene_uptake_option 1
 ZM_Naphthalene_uptake_option 1
 ZS_Naphthalene_uptake_option 1
@@ -12970,8 +12970,8 @@ BC_Phenanthrene_uptake_option 1
 MA_Phenanthrene_uptake_option 2
 SG_Phenanthrene_uptake_option 2
 ZG_Phenanthrene_uptake_option 1
-PL_Phenanthrene_uptake_option 2
-PS_Phenanthrene_uptake_option 2
+PL_Phenanthrene_uptake_option 1
+PS_Phenanthrene_uptake_option 1
 ZL_Phenanthrene_uptake_option 1
 ZM_Phenanthrene_uptake_option 1
 ZS_Phenanthrene_uptake_option 1
@@ -13026,8 +13026,8 @@ BC_Pyrene_uptake_option 1
 MA_Pyrene_uptake_option 2
 SG_Pyrene_uptake_option 2
 ZG_Pyrene_uptake_option 1
-PL_Pyrene_uptake_option 2
-PS_Pyrene_uptake_option 2
+PL_Pyrene_uptake_option 1
+PS_Pyrene_uptake_option 1
 ZL_Pyrene_uptake_option 1
 ZM_Pyrene_uptake_option 1
 ZS_Pyrene_uptake_option 1
@@ -13082,8 +13082,8 @@ BC_Benzo_uptake_option 1
 MA_Benzo_uptake_option 2
 SG_Benzo_uptake_option 2
 ZG_Benzo_uptake_option 1
-PL_Benzo_uptake_option 2
-PS_Benzo_uptake_option 2
+PL_Benzo_uptake_option 1
+PS_Benzo_uptake_option 1
 ZL_Benzo_uptake_option 1
 ZM_Benzo_uptake_option 1
 ZS_Benzo_uptake_option 1

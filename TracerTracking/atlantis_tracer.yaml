@@ -10,17 +10,17 @@ paths:
 # global attributes of the initial conditions file.
 boxes: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_xy.bgm
 
-initial conditions: /ocean/$USER/Atlantis/SSAM_Runs/AtlantisContamFiles/SS_init_0tracer.nc
+initial conditions: /ocean/$USER/Atlantis/SSAM_Runs/TracerTracking/SS_init_0tracer.nc
 
-groups: /ocean/$USER/Atlantis/SSAM_Runs/AtlantisContamFiles/SS_grps.csv
+groups: /ocean/$USER/Atlantis/SSAM_Runs/TracerTracking/SS_grps_tracer.csv
 
 migrations: /ocean/$USER/Atlantis/SSAM_Runs/AtlantisContamFiles/SalishMigrations.csv
 
 parameters:
   # The run, forcing, physics, and biology parameters files are required for all runs,
   # and they must be identified by those exact keys.
-  run: /ocean/$USER/Atlantis/SSAM_Runs/SS_run_tracer.prm
-  forcing: /ocean/$USER/Atlantis/SSAM_Runs/SS_forcing_tracer.prm
+  run: /ocean/$USER/Atlantis/SSAM_Runs/TracerTracking/SS_run_tracer.prm
+  forcing: /ocean/$USER/Atlantis/SSAM_Runs/TracerTracking/SS_forcing_tracer.prm
   physics: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_physics.prm
   biology: /ocean/$USER/Atlantis/salish-sea-atlantis-model/04SS_biology.prm
 
