@@ -22,7 +22,7 @@ parameters:
   # The run, forcing, physics, biology, and harvest parameters files are required for all runs,
   # and they must be identified by those exact keys.
   run: /ocean/$USER/Atlantis/SSAM_Runs/SS_run_contam.prm #change these to control
-  forcing: /ocean/$USER/Atlantis/SSAM_Runs/SS_forcing_contam_2020-01.prm # change these to control
+  forcing: /ocean/$USER/Atlantis/SSAM_Runs/SS_forcing_contam_2019-01.prm # change these to control
   physics: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_physics.prm
   biology: /ocean/$USER/Atlantis/salish-sea-atlantis-model/01SS_biology_linear_per_day.prm
   harvest: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_harvest.prm
@@ -41,7 +41,7 @@ forcing:
   contaminants01.nc:
     link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/contam_SSAtlantis_year_of_zero2.nc
   contaminants02.nc:
-    link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/ForcingFiles/SSAM_Scenario_7a_2020-01-06.nc
+    link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/ForcingFiles/SSAM_Scenario_5b_2019-01-14.nc
   contaminants03.nc:
     link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/contam_SSAtlantis_dummy.nc
     
