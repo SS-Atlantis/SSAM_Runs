@@ -43,7 +43,7 @@ forcing:
   contaminants02.nc:
     link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/contam_SSAtlantis_half_year_of_zero.nc
   contaminants03.nc:
-    link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/ForcingFiles/SSAM_Scenario_6a_2019-07-16.nc
+    link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/ForcingFiles/SSAM_Scenario_6a_2019-07-25.nc
   contaminants04.nc:
     link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/contam_SSAtlantis_dummy.nc
     
