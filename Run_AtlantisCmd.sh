@@ -1,3 +1,3 @@
 #!/bin/bash
 
-atlantis run ./atlantis.yaml /ocean/rlovindeer/MOAD/analysis-raisha/SSmodel_outputs/Spills/Scenario_6a_2020-07-21_again
+atlantis run ./atlantis_spring.yaml /ocean/rlovindeer/MOAD/analysis-raisha/SSmodel_outputs/Spills/Scenario_5b_2019-04-06
