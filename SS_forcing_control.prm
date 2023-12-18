@@ -103,32 +103,24 @@ Naphthalene Phenanthrene Pyrene Benzo
 # Now the actual files. Can have more than one tracer in a file
 Naphthalene_nFiles 1
 Naphthalene_File0.name contaminants01.nc
-#Naphthalene_File1.name contaminants02.nc
-#Naphthalene_File2.name contaminants03.nc
 Naphthalene_rewind 0
 Naphthalene_use_resets 1
 Naphthalene_ResetTol 0.1
 
 Phenanthrene_nFiles 1
 Phenanthrene_File0.name contaminants01.nc
-#Phenanthrene_File1.name contaminants02.nc
-#Phenanthrene_File2.name contaminants03.nc
 Phenanthrene_rewind 0
 Phenanthrene_use_resets 1
 Phenanthrene_ResetTol 0.1
 
 Pyrene_nFiles 1
 Pyrene_File0.name contaminants01.nc
-#Pyrene_File1.name contaminants02.nc
-#Pyrene_File2.name contaminants03.nc
 Pyrene_rewind 0
 Pyrene_use_resets 1
 Pyrene_ResetTol 0.1
 
 Benzo_nFiles 1
 Benzo_File0.name contaminants01.nc
-#Benzo_File1.name contaminants02.nc
-#Benzo_File2.name contaminants03.nc
 Benzo_rewind 0
 Benzo_use_resets 1
 Benzo_ResetTol 0.1

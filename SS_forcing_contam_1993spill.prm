@@ -108,7 +108,7 @@ Naphthalene_File2.name contaminants03.nc
 Naphthalene_rewind 0
 Naphthalene_File0.use_resets 0
 Naphthalene_File1.use_resets 1
-Naphthalene_File2.use_resets 0
+Naphthalene_File2.use_resets 1
 Naphthalene_ResetTol 0.1
 
 Phenanthrene_nFiles 3
@@ -118,7 +118,7 @@ Phenanthrene_File2.name contaminants03.nc
 Phenanthrene_rewind 0
 Phenanthrene_File0.use_resets 0
 Phenanthrene_File1.use_resets 1
-Phenanthrene_File2.use_resets 0
+Phenanthrene_File2.use_resets 1
 Phenanthrene_ResetTol 0.1
 
 Pyrene_nFiles 3
@@ -128,7 +128,7 @@ Pyrene_File2.name contaminants03.nc
 Pyrene_rewind 0
 Pyrene_File0.use_resets 0
 Pyrene_File1.use_resets 1
-Pyrene_File2.use_resets 0
+Pyrene_File2.use_resets 1
 Pyrene_ResetTol 0.1
 
 Benzo_nFiles 3
@@ -138,7 +138,7 @@ Benzo_File2.name contaminants03.nc
 Benzo_rewind 0
 Benzo_File0.use_resets 0
 Benzo_File1.use_resets 1
-Benzo_File2.use_resets 0
+Benzo_File2.use_resets 1
 Benzo_ResetTol 0.1
 
 # Light and noise pollutants

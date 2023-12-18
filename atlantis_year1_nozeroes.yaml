@@ -1,20 +1,20 @@
 run id: SS-Atlantis
 
 paths:
-  atlantis code: /ocean/$USER/Atlantis/atlantis-trunk/atlantis_v6666mod
+  atlantis code: /ocean/$USER/Atlantis/atlantis-trunk/atlantis_v6699
   atlantis executable name: atlantisMerged
   runs directory: /ocean/$USER/Atlantis/SSAM_Runs/
   atlantis command: $HOME/conda_envs/atlantis-cmd/bin/atlantis
 
 # The name of the boxes .bgm file must match the value of the "geometry" attribute in the
 # global attributes of the initial conditions file.
-boxes: /ocean/$USER/Atlantis/SSAM_Runs/AtlantisContamFiles/SS_xy.bgm
+boxes: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_xy.bgm
 
-initial conditions: /ocean/$USER/Atlantis/salish-sea-atlantis-model/RL_files_v6685/SS_init_contam_BF3.nc
+initial conditions: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_init_contam.nc
 
 groups: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_grps.csv
 
-migrations: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_migrations_v6666.csv
+migrations: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_migrations.csv
 
 fisheries: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_fisheries.csv
 
@@ -24,7 +24,7 @@ parameters:
   run: /ocean/$USER/Atlantis/SSAM_Runs/SS_run_contam_test.prm #change these to control
   forcing: /ocean/$USER/Atlantis/SSAM_Runs/SS_forcing_contam_1993spill_nozeroes.prm # change these to control
   physics: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_physics.prm
-  biology: /ocean/$USER/Atlantis/salish-sea-atlantis-model/01SS_biology_linear_per_day3.prm
+  biology: /ocean/$USER/Atlantis/salish-sea-atlantis-model/00SS_biology.prm
   harvest: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_harvest.prm
 
 forcing:

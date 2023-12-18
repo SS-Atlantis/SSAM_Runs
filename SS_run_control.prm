@@ -7,7 +7,8 @@
 verbose       	    0   # Detailed logged output
 check_dups    	    0   # click 1 to check for duplicated params
 flag_replicated_old 0   # Whether reproducing old code quirks
-
+flag_mig_in_bioindx 0   # Writes total biomass (across every MIGID entry) from migration array into biomindx.txt
+flag_replicated_old_PPmort 1
 flagecon_on         0   # Flag showing whether want economics loaded and submodel run (1) or not (0)
 flag_fisheries_on   1   # Flag showing whether want fisheries loaded and submodel run (1) or not (0)
 flag_skip_biol      0   # Flag showing whether want biological model; If 1 the Ecology submodel is not loaded only for debugging!
@@ -29,23 +30,23 @@ flag_old_embryo_init        0
 flag_replicate_old_calendar 0
 external_populations        0
 flag_multiyr_migs           1
-flag_mig_in_bioindx         1
+flag_mig_in_bioindx         0
 store_aggregate_yoy         1
 store_mig_array             1
 
 checkbox      265         # Give detailed logged output for this box
-checkstart    0 day     # Start detailed logged output after this date
+checkstart    35000000000 day     # Start detailed logged output after this date
 checkstop     35000000000 day
 fishtest      0        # Count up total population for each vertebrate after each main subroutine: 0=no, 1=yes
 flaggape      0        # Periodically list prey vs gape statistics (tuning diagnostic)
-flagchecksize 1        # Periodically list relative size (tuning diagnostic)
+flagchecksize 0        # Periodically list relative size (tuning diagnostic)
 flagagecheck  0        # Periodically list age structure per cohort (tuning diagnostic) ** ?
-flagdietcheck 1        # Periodically list realised diet matchups (tuning diagnostic) ** Detailed dietcheck
+flagdietcheck 0        # Periodically list realised diet matchups (tuning diagnostic) ** Detailed dietcheck
 checkNH       0        # Give detailed logged output for NH in checkbox
 checkDL       0        # Give detailed logged output for DL in checkbox
 checkDR       0        # Give detailed logged output for DR in checkbox
 checkbiom     0        # Give detailed logged output for biomasses in checkbox
-which_check   0        # ID number of group to track (if don't want to track anything set to 80 (for other groups see list below)
+which_check   80        # ID number of group to track (if don't want to track anything set to 80 (for other groups see list below)
 habitat_check 0
 which_fleet   33       # ID number of fleet to track (if don't want to track anything set to 33 (for other fleets see list below)
 move_check    67       # ID number of group where tracking movements  (if don't want to track anything set it to 67, for other groups see list below)
@@ -64,10 +65,11 @@ flagIsPolar   0
 tburnday      0
 
 title      SalishSea model run
-dt         12 hour    # 12 hour time step
-tstop      36500 day   # Stop time after the given period (1822 = 5; 3650=10; 5475=15; 7300=20, 12775 = 35, 18250 = 50)
-toutstart  0 day      # Output start time
-toutinc    90 day    # Write output with this periodicity: 1yr run = 1 day; 5 year = 30; 20 year = 91 days
+dt         12 hour     # 12 hour time step
+tstop      18250 day   # Stop time after the given period (1822 = 5; 3650=10; 5475=15; 7300=20, 12775 = 35, 18250 = 50)
+toutstart  0 day    # Output start time (after 15 y burn-in)
+#toutstart  5475 day    # Output start time (after 15 y burn-in)
+toutinc    90 day      # Write output with this periodicity: 1yr run = 1 day; 5 year = 30; 20 year = 91 days
 toutfinc   365 day     # Write fisheries output with this periodicity
 
 tsumout    365 day     # Write stock state summary with this periodicity; migration debug
@@ -121,15 +123,22 @@ K_max_active_cities 0
 K_num_oil_companies 0
 
 # Contaminant information (only used when track_contaminants set to 1)
-num_contaminants  4
+num_contaminants  0
 
-contaminant_names 4
-Naphthalene Phenanthrene Pyrene Benzo
+contaminant_names 0
 
-contaminant_units 4
-mgPAH/m^3 mgPAH/m^3 mgPAH/m^3 mgPAH/m^3
+contaminant_units 0
 
 flag_pollutant_impacts 0
+
+# See the manual for more info
+external_box 0
+flagAllowLand 0
+flag_old_embryo_init 0  #This flag is to allow legacy models to have the same starting conditions under the new code as they did in older version
+flag_replicate_old_calendar 0 #This flag specifically allows for legacy models and the influence of environment on the distribution of recruits to be replicated in the newer code
+flag_use_deltaH 0
+store_aggregate_yoy 0
+store_mig_array 0
 
 ################################################
 # List of functional groups (58)				

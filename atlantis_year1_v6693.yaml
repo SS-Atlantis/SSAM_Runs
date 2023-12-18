@@ -1,7 +1,7 @@
 run id: SS-Atlantis
 
 paths:
-  atlantis code: /ocean/$USER/Atlantis/atlantis-trunk/atlantis_v6693
+  atlantis code: /ocean/$USER/Atlantis/atlantis-trunk/atlantis_v6699
   atlantis executable name: atlantisMerged
   runs directory: /ocean/$USER/Atlantis/SSAM_Runs/
   atlantis command: $HOME/conda_envs/atlantis-cmd/bin/atlantis
@@ -24,7 +24,7 @@ parameters:
   run: /ocean/$USER/Atlantis/SSAM_Runs/SS_run_contam_test.prm #change these to control
   forcing: /ocean/$USER/Atlantis/SSAM_Runs/SS_forcing_contam_1993spill.prm # change these to control
   physics: /ocean/$USER/Atlantis/salish-sea-atlantis-model/RL_files_v6685/SS_physics.prm
-  biology: /ocean/$USER/Atlantis/salish-sea-atlantis-model/RL_files_v6685/01SS_biology_linear_per_day_adjusted.prm
+  biology: /ocean/$USER/Atlantis/salish-sea-atlantis-model/RL_files_v6685/01SS_biology_linear_per_day_adjusted_copy.prm
   harvest: /ocean/$USER/Atlantis/salish-sea-atlantis-model/RL_files_v6685/SS_harvest.prm
 
 forcing:
