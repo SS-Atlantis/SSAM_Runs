@@ -98,16 +98,17 @@ use_weighted_assim 0
 # The number of tracers to search for in the files and the names of those tracers.
 nforceTracers 1
 tracerNames 1
-Phenanthrene
+Benzo
 
 # Now the actual files. Can have more than one tracer in a file
-Phenanthrene_nFiles 1
-Phenanthrene_File0.name contaminants02.nc
-Phenanthrene_rewind 0
-Phenanthrene_File0.use_resets 0
-Phenanthrene_File1.use_resets 0
+Benzo_nFiles 2
+Benzo_File0.name contaminants01.nc
+Benzo_File1.name contaminants02.nc
+Benzo_rewind 0
+Benzo_File0.use_resets 0
+Benzo_File1.use_resets 0
 
-Phenanthrene_ResetTol 0.1
+Benzo_ResetTol 0.1
 
 # Light and noise pollutants
 use_pollutantfiles 0

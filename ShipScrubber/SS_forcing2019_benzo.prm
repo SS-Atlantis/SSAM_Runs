@@ -98,16 +98,68 @@ use_weighted_assim 0
 # The number of tracers to search for in the files and the names of those tracers.
 nforceTracers 1
 tracerNames 1
-Phenanthrene
+Benzo
 
 # Now the actual files. Can have more than one tracer in a file
-Phenanthrene_nFiles 1
-Phenanthrene_File0.name contaminants02.nc
-Phenanthrene_rewind 0
-Phenanthrene_File0.use_resets 0
-Phenanthrene_File1.use_resets 0
 
-Phenanthrene_ResetTol 0.1
+Benzo_nFiles 27
+Benzo_File0.name contaminants01.nc
+Benzo_File1.name contaminants01.nc
+Benzo_File2.name contaminants01.nc
+Benzo_File3.name contaminants01.nc
+Benzo_File4.name contaminants01.nc
+Benzo_File5.name contaminants01.nc
+Benzo_File6.name contaminants01.nc
+Benzo_File7.name contaminants01.nc
+Benzo_File8.name contaminants01.nc
+Benzo_File9.name contaminants01.nc
+Benzo_File10.name contaminants01.nc
+Benzo_File11.name contaminants01.nc
+Benzo_File12.name contaminants01.nc
+Benzo_File13.name contaminants01.nc
+Benzo_File14.name contaminants01.nc
+Benzo_File15.name contaminants01.nc
+Benzo_File16.name contaminants01.nc
+Benzo_File17.name contaminants01.nc
+Benzo_File18.name contaminants01.nc
+Benzo_File19.name contaminants01.nc
+Benzo_File20.name contaminants01.nc
+Benzo_File21.name contaminants01.nc
+Benzo_File22.name contaminants01.nc
+Benzo_File23.name contaminants01.nc
+Benzo_File24.name contaminants01.nc
+Benzo_File25.name contaminants01.nc
+Benzo_File26.name contaminants02.nc
+Benzo_rewind 0
+Benzo_File0.use_resets 0
+Benzo_File1.use_resets 0
+Benzo_File2.use_resets 0
+Benzo_File3.use_resets 0
+Benzo_File4.use_resets 0
+Benzo_File5.use_resets 0
+Benzo_File6.use_resets 0
+Benzo_File7.use_resets 0
+Benzo_File8.use_resets 0
+Benzo_File9.use_resets 0
+Benzo_File10.use_resets 0
+Benzo_File11.use_resets 0
+Benzo_File12.use_resets 0
+Benzo_File13.use_resets 0
+Benzo_File14.use_resets 0
+Benzo_File15.use_resets 0
+Benzo_File16.use_resets 0
+Benzo_File17.use_resets 0
+Benzo_File18.use_resets 0
+Benzo_File19.use_resets 0
+Benzo_File20.use_resets 0
+Benzo_File21.use_resets 0
+Benzo_File22.use_resets 0
+Benzo_File23.use_resets 0
+Benzo_File24.use_resets 0
+Benzo_File25.use_resets 0
+Benzo_File26.use_resets 0
+
+Benzo_ResetTol 0.1
 
 # Light and noise pollutants
 use_pollutantfiles 0
