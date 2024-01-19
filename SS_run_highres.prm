@@ -66,7 +66,7 @@ tburnday      0
 
 title      SalishSea model run
 dt         12 hour    # 12 hour time step
-tstop      30 day   # Stop time after the given period (1822 = 5; 3650=10; 5475=15; 7300=20, 12775 = 35, 18250 = 50)
+tstop      90 day   # Stop time after the given period (1822 = 5; 3650=10; 5475=15; 7300=20, 12775 = 35, 18250 = 50)
 toutstart  0 day   # Output start time
 toutinc    0.5 day    # Write output with this periodicity: 1yr run = 1 day; 5 year = 30; 20 year = 91 days
 toutfinc   365 day     # Write fisheries output with this periodicity
