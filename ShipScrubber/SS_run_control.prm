@@ -7,6 +7,7 @@
 verbose       	    0   # Detailed logged output
 check_dups    	    0   # click 1 to check for duplicated params
 flag_replicated_old 0   # Whether reproducing old code quirks
+flag_replicated_old_PPmort 1
 flag_mig_in_bioindx 1   # Writes total biomass (across every MIGID entry) from migration array into biomindx.txt
 flagecon_on         0   # Flag showing whether want economics loaded and submodel run (1) or not (0)
 flag_fisheries_on   1   # Flag showing whether want fisheries loaded and submodel run (1) or not (0)
