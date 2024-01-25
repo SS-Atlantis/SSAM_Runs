@@ -1,7 +1,7 @@
 run id: SS-Atlantis
 
 paths:
-  atlantis code: /ocean/$USER/Atlantis/atlantis-trunk/atlantis_v6666
+  atlantis code: /ocean/$USER/Atlantis/atlantis-trunk/atlantis_v6699
   atlantis executable name: atlantisMerged
   runs directory: /ocean/$USER/Atlantis/SSAM_Runs/ShipScrubber
   atlantis command: $HOME/conda_envs/atlantis-cmd/bin/atlantis
@@ -21,9 +21,9 @@ parameters:
   # The run, forcing, physics, biology, and harvest parameters files are required for all runs,
   # and they must be identified by those exact keys.
   run: /ocean/$USER/Atlantis/SSAM_Runs/ShipScrubber/SS_run.prm
-  forcing: /ocean/$USER/Atlantis/SSAM_Runs/ShipScrubber/SS_forcing2019-2029.prm #SS_forcing2019.prm, SS_forcing2019-2024.prm
+  forcing: /ocean/$USER/Atlantis/SSAM_Runs/ShipScrubber/SS_forcing2019.prm #SS_forcing2019-2029.prm, SS_forcing2019-2024.prm
   physics: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_physics.prm
-  biology: /ocean/$USER/Atlantis/salish-sea-atlantis-model/01SS_biology_linear_per_day.prm
+  biology: /ocean/$USER/Atlantis/salish-sea-atlantis-model/00SS_biology.prm
   harvest: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_harvest.prm
 
 forcing:
@@ -42,7 +42,7 @@ forcing:
   contaminants02.nc:
     link to: /ocean/$USER/Atlantis/ShipScrubber/Atlantis_Scrubber_PAH_2019.nc
   contaminants03.nc:
-    link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/contam_SSAtlantis_dummy.nc
+    link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/contam_SSAtlantis_dummy_smallnum.nc
     
 output filename base: outputSalishSea
 
