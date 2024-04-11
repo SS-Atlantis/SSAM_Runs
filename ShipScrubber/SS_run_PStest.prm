@@ -20,7 +20,7 @@ track_rugosity_arag 1   # flag indicating that rugosity and aragonite saturation
 track_pH            1   # flag indicating that pH to be tracked
 flag_use_deltaH     0   # Flag to use dH for calculation of acidification
 mirror_invalid      0   # Flag indicating whether want the model to estimate source destinations of hydrodynamics if have invalide feed data (1) or not (0)
-track_contaminants  1   # Whether tracking contaminants or not
+track_contaminants  0   # Whether tracking contaminants or not
 flagpassivetracer   0   # Flag indicating whether a passive tracer is needed for tracking tranpsorts or not (1 = yes, 0 = no)
 flag_sanity_check   1   # flag to check for the large vertebrate reproduction bug
 flag_contam_sanity_check 0   # flag to turn on checking of contaminant fluxes
@@ -74,7 +74,7 @@ toutfinc   365 day     # Write fisheries output with this periodicity
 tsumout    365 day     # Write stock state summary with this periodicity; migration debug
 fishout    0          # Switch to turn fisheries output on = 1, off = 0
 flagreusefile 2        # Switch to show want to append output file no = 0, yes = 1, replace = 2
-flagannual_Mest 1      # Write out mortality per predator annually (1) or not (0) #
+flagannual_Mest 0      # Write out mortality per predator annually (1) or not (0) #
 
 # Parameters defining the numbers of certain types of groups (needed to  parameter arrays in the
 # initialisation section of the model, best left untouched for now)
@@ -108,11 +108,12 @@ flagAllowLand     0    # Whether to allow for dynamic land layers (1) or not (0)
 flagindustry_on   0    # Flag indicating whether industry models are on (1) or not (0)
 
 # Parameters for rescalingin inital vertebrate densities - only for use in emergencies,
-flagscaleinit     0  # Flag to indicate whether scaling initial vertebrate densities (1=yes, 0=no); 1 selected and rescales by the factor stated below. read numbers and multiplies.
+flagscaleinit     1  # Flag to indicate whether scaling initial vertebrate densities (1=yes, 0=no); 1 selected and rescales by the factor stated below. read numbers and multiplies.
 
 # Multiplicative scalr for vertebrate initial densities (as read-in from cdf file)
 init_scalar       58
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1.01 1 1 1 1 1 1 1 1 1
+#F F F F F F F F F H H H F F F F F F F F F S S S S S S C H P O O W B D B C B S B B P B B M S Z P P Z Z Z P B B D D D
 
 cont_warn 0
 K_num_soil_layers 0
@@ -122,12 +123,12 @@ K_max_active_cities 0
 K_num_oil_companies 0
 
 # Contaminant information (only used when track_contaminants set to 1)
-num_contaminants  1
+num_contaminants  0
 
-contaminant_names 1
+contaminant_names 0
 Phenanthrene
 
-contaminant_units 1
+contaminant_units 0
 mgPAH/m^3
 
 flag_pollutant_impacts 0
