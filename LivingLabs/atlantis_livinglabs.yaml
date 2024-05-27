@@ -23,7 +23,7 @@ parameters:
   run: /ocean/$USER/Atlantis/SSAM_Runs/LivingLabs/SS_run_livinglabs.prm
   forcing: /ocean/$USER/Atlantis/SSAM_Runs/LivingLabs/SS_forcing_livinglabs.prm
   physics: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_physics.prm
-  biology: /ocean/$USER/Atlantis//SSAM_Runs/LivingLabs/01SS_biology_livinglabs_climate2.prm # _control _heatwave _climate
+  biology: /ocean/$USER/Atlantis//SSAM_Runs/LivingLabs/01SS_biology_livinglabs_climate3.prm # _control _heatwave _climate
   harvest: /ocean/$USER/MOAD/analysis-raisha/SSmodel_outputs/LivingLabs/climate_01/harvest.prm
 
 forcing:
