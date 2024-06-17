@@ -41,7 +41,7 @@ forcing:
   contaminants01.nc:
     link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/contam_SSAtlantis_year_of_zero2.nc
   contaminants02.nc:
-    link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/SSAM_Scenario_5b_2019-01-14_100_single_injection.nc
+    link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/ForcingFiles/SSAM_Scenario_7a_2019-01-26_1000mg_single_injection.nc
   contaminants03.nc:
     link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/contam_SSAtlantis_dummy_smallnum.nc
     
