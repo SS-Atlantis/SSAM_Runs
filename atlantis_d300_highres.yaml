@@ -24,7 +24,7 @@ parameters:
   run: /ocean/$USER/Atlantis/SSAM_Runs/SS_run_later_highres.prm #change these to control
   forcing: /ocean/$USER/Atlantis/SSAM_Runs/SS_forcing_contam_spillat_300d.prm #SS_forcing_contam_time0_single.prm
   physics: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_physics.prm
-  biology: /ocean/$USER/Atlantis/salish-sea-atlantis-model/00SS_biology_B.prm
+  biology: /ocean/$USER/Atlantis/salish-sea-atlantis-model/00SS_biology_EqPaper.prm
   harvest: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_harvest.prm
 
 forcing:
@@ -41,7 +41,7 @@ forcing:
   contaminants01.nc:
     link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/contam_SSAtlantis_300d_zero.nc
   contaminants02.nc:
-    link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/ForcingFiles/SSAM_Scenario_7a_2019-01-26_1000kg_single_injection.nc
+    link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/ForcingFiles/SSAM_Scenario_7a_2019-01-26_1000mgm3_single_injection.nc
   contaminants03.nc:
     link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/contam_SSAtlantis_dummy_smallnum.nc
     
