@@ -1,3 +1,3 @@
 #!/bin/bash
 
-atlantis run ./atlantis_d300_highres.yaml /ocean/rlovindeer/MOAD/analysis-raisha/SSmodel_outputs/Tests/7a_v6699_1000mgm3_300d_highres_daily_cUptake
+atlantis run ./atlantis_year1_highres.yaml /ocean/rlovindeer/MOAD/analysis-raisha/SSmodel_outputs/Tests/age_contaminants_modified_p_ageup
