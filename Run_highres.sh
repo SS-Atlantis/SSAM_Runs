@@ -1,3 +1,3 @@
 #!/bin/bash
 
-atlantis run ./atlantis_year1_highres_EqnsPaper.yaml /ocean/rlovindeer/MOAD/analysis-raisha/SSmodel_outputs/Spills/7a-EquationsPaper-ZL-kgrowth
+atlantis run ./atlantis_year1_highres_EqnsPaper.yaml /ocean/rlovindeer/MOAD/analysis-raisha/SSmodel_outputs/Spills/7a-EquationsPaper-FHE-effects
