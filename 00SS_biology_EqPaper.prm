@@ -11971,7 +11971,7 @@ BC_Naphthalene_uptake_rate 1.0e-08
 MA_Naphthalene_uptake_rate 3.0e-03
 SG_Naphthalene_uptake_rate 3.0e-03
 ZG_Naphthalene_uptake_rate 1.0e-08
-PL_Naphthalene_uptake_rate 0.001
+PL_Naphthalene_uptake_rate 3.0e-03
 PS_Naphthalene_uptake_rate 3.0e-03
 ZL_Naphthalene_uptake_rate 1.0e-08
 ZM_Naphthalene_uptake_rate 1.0e-08
@@ -12027,7 +12027,7 @@ BC_Phenanthrene_uptake_rate 2.0e-06
 MA_Phenanthrene_uptake_rate 2.0e-04
 SG_Phenanthrene_uptake_rate 2.0e-04
 ZG_Phenanthrene_uptake_rate 2.0e-06
-PL_Phenanthrene_uptake_rate 0.001
+PL_Phenanthrene_uptake_rate 2.0e-04
 PS_Phenanthrene_uptake_rate 2.0e-04
 ZL_Phenanthrene_uptake_rate 2.0e-06
 ZM_Phenanthrene_uptake_rate 2.0e-06
@@ -12083,7 +12083,7 @@ BC_Pyrene_uptake_rate 1.4e-05
 MA_Pyrene_uptake_rate 1.4e-04
 SG_Pyrene_uptake_rate 1.4e-04
 ZG_Pyrene_uptake_rate 1.4e-05
-PL_Pyrene_uptake_rate 0.05
+PL_Pyrene_uptake_rate 1.4e-04
 PS_Pyrene_uptake_rate 1.4e-04
 ZL_Pyrene_uptake_rate 1.4e-05
 ZM_Pyrene_uptake_rate 1.4e-05
@@ -12139,7 +12139,7 @@ BC_Benzo_uptake_rate 8.0e-06
 MA_Benzo_uptake_rate 8.0e-05
 SG_Benzo_uptake_rate 8.0e-05
 ZG_Benzo_uptake_rate 8.0e-06
-PL_Benzo_uptake_rate 0.01
+PL_Benzo_uptake_rate 8.0e-05
 PS_Benzo_uptake_rate 8.0e-05
 ZL_Benzo_uptake_rate 8.0e-06
 ZM_Benzo_uptake_rate 8.0e-06
