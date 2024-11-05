@@ -24,7 +24,7 @@ parameters:
   run: /ocean/$USER/Atlantis/SSAM_Runs/SS_run_control.prm #change these to control
   forcing: /ocean/$USER/Atlantis/SSAM_Runs/SS_forcing_control.prm # change these to control
   physics: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_physics.prm
-  biology: /ocean/$USER/Atlantis/salish-sea-atlantis-model/01SS_biology.prm
+  biology: /ocean/$USER/Atlantis/salish-sea-atlantis-model/00SS_biology.prm
   harvest: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_harvest.prm
 
 forcing:
