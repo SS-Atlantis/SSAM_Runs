@@ -10,7 +10,7 @@ flag_replicated_old 0   # Whether reproducing old code quirks
 flag_mig_in_bioindx 0   # Writes total biomass (across every MIGID entry) from migration array into biomindx.txt
 flag_replicated_old_PPmort 1
 flagecon_on         0   # Flag showing whether want economics loaded and submodel run (1) or not (0)
-flag_fisheries_on   1   # Flag showing whether want fisheries loaded and submodel run (1) or not (0)
+flag_fisheries_on   0   # Flag showing whether want fisheries loaded and submodel run (1) or not (0)
 flag_skip_biol      0   # Flag showing whether want biological model; If 1 the Ecology submodel is not loaded only for debugging!
 flag_skip_phys      0   # Flag showing whether want biological model run (0) or not (1 - only used when debugging fisheries)
 
