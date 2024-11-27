@@ -1,7 +1,7 @@
 run id: SS-Atlantis
 
 paths:
-  atlantis code: /ocean/$USER/Atlantis/atlantis-trunk/atlantis_v6699
+  atlantis code: /ocean/$USER/Atlantis/atlantis-trunk/atlantis_v6718
   atlantis executable name: atlantisMerged
   runs directory: /ocean/$USER/Atlantis/SSAM_Runs/
   atlantis command: $HOME/conda_envs/atlantis-cmd/bin/atlantis
@@ -25,7 +25,7 @@ parameters:
   forcing: /ocean/$USER/Atlantis/SSAM_Runs/SS_forcing_contam_2019-01.prm # change these to control
   physics: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_physics.prm
   biology: /ocean/$USER/Atlantis/salish-sea-atlantis-model/00SS_biology_20240411.prm
-  harvest: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_harvest.prm
+  harvest: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_harvest_closures.prm
 
 forcing:
   # The keys must match the forcing file names in the forcing.prm file.
@@ -41,7 +41,7 @@ forcing:
   contaminants01.nc:
     link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/contam_SSAtlantis_year_of_zero2.nc
   contaminants02.nc:
-    link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/SSAM_Scenario_5b_2019-01-20_10000_fromzarr.nc
+    link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/ForcingFiles/SSAM_Scenario_5b_2019-01-20_10000_fromzarr.nc
   contaminants03.nc:
     link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/contam_SSAtlantis_dummy_smallnum.nc
     
