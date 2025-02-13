@@ -1,3 +1,3 @@
 #!/bin/bash
 
-atlantis run ./atlantis_year1_highres_EqnsPaper.yaml /ocean/rlovindeer/MOAD/analysis-raisha/SSmodel_outputs/Spills/7a-EquationsPaper-90d-highFHEuptake_WHB
+atlantis run ./atlantis_year1_highres_fisheries.yaml /ocean/rlovindeer/MOAD/analysis-raisha/SSmodel_outputs/Spills/highres_2boxes_closed_90
