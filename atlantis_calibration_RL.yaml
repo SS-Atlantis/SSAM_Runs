@@ -1,0 +1,54 @@
+run id: SS-Atlantis
+
+paths:
+  atlantis code: /ocean/$USER/Atlantis/atlantis-trunk/AtlantisTrunk
+  atlantis executable name: atlantisMerged
+  runs directory: /ocean/$USER/Atlantis/SSAM_Runs/
+  atlantis command: $HOME/conda_envs/atlantis-cmd/bin/atlantis
+
+# The name of the boxes .bgm file must match the value of the "geometry" attribute in the
+# global attributes of the initial conditions file.
+boxes: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_xy.bgm
+
+initial conditions: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_init_NO_Si.nc
+
+groups: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_grps.csv
+
+migrations: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_migrationsRL.csv
+
+fisheries: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_fisheries.csv
+
+parameters:
+  # The run, forcing, physics, biology, and harvest parameters files are required for all runs,
+  # and they must be identified by those exact keys.
+  run: /ocean/$USER/Atlantis/SSAM_Runs/SS_run_calibration.prm #change these to control
+  forcing: /ocean/$USER/Atlantis/SSAM_Runs/SS_forcing_contam_time0_single.prm # change these to control
+  physics: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_physics_RL.prm
+  biology: /ocean/$USER/Atlantis/salish-sea-atlantis-model/00SS_biology_RLtest.prm
+  harvest: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_harvest.prm
+
+forcing:
+  # The keys must match the forcing file names in the forcing.prm file.
+  # The file names in the forcing.prm file must be just file names, not path/filename.
+  # The keys will be the names used for the symlinks created in the temporary run
+  # directory.
+  SS_hydro.nc:
+    link to: /ocean/$USER/Atlantis/Physics/Final/SS_hydro_07-21.nc
+  SS_temp.nc:
+    link to: /ocean/$USER/Atlantis/Physics/Final/SS_temp_07-21.nc
+  SS_salt.nc:
+    link to: /ocean/$USER/Atlantis/Physics/Final/SS_salt_07-21.nc
+  contaminants01.nc:
+    link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/contam_SSAtlantis_year_of_zero2.nc
+  contaminants02.nc:
+    link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/ForcingFiles/SSAM_Scenario_7a_2019-01-26_1000kg_single_injection.nc
+  contaminants03.nc:
+    link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/contam_SSAtlantis_dummy_smallnum.nc
+    
+output filename base: outputSalishSea
+
+vcs revisions:
+  git:
+    - /ocean/$USER/Atlantis/salish-sea-atlantis-model/
+    - /ocean/$USER/Atlantis/NEMO-Cmd/
+    - /ocean/$USER/Atlantis/AtlantisCmd/
