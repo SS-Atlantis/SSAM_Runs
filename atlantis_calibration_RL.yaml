@@ -14,7 +14,7 @@ initial conditions: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_init_NO_S
 
 groups: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_grps.csv
 
-migrations: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_migrations.csv
+migrations: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_migrationsRL.csv
 
 fisheries: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_fisheries.csv
 
