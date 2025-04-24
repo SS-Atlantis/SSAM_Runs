@@ -41,7 +41,7 @@ fishtest      0        # Count up total population for each vertebrate after eac
 flaggape      0        # Periodically list prey vs gape statistics (tuning diagnostic)
 flagchecksize 0        # Periodically list relative size (tuning diagnostic)
 flagagecheck  0        # Periodically list age structure per cohort (tuning diagnostic) ** ?
-flagdietcheck 0        # Periodically list realised diet matchups (tuning diagnostic) ** Detailed dietcheck
+flagdietcheck 1        # Periodically list realised diet matchups (tuning diagnostic) ** Detailed dietcheck
 checkNH       0        # Give detailed logged output for NH in checkbox
 checkDL       0        # Give detailed logged output for DL in checkbox
 checkDR       0        # Give detailed logged output for DR in checkbox
@@ -66,10 +66,10 @@ tburnday      0
 
 title      SalishSea model run
 dt         12 hour    # 12 hour time step
-tstop      2750 day   # Stop time after the given period (1822 = 5; 3650=10; 5475=15; 7300=20, 12775 = 35, 18250 = 50)
+tstop      18250 day   # Stop time after the given period (1822 = 5; 3650=10; 5475=15; 7300=20, 12775 = 35, 18250 = 50)
 toutstart  0 day   # Output start time
-toutinc    30 day    # Write output with this periodicity: 1yr run = 1 day; 5 year = 30; 20 year = 91 days
-toutfinc   1 day     # Write fisheries output with this periodicity
+toutinc    90 day    # Write output with this periodicity: 1yr run = 1 day; 5 year = 30; 20 year = 91 days
+toutfinc   0 day     # Write fisheries output with this periodicity
 
 tsumout    365 day     # Write stock state summary with this periodicity; migration debug
 fishout    0          # Switch to turn fisheries output on = 1, off = 0

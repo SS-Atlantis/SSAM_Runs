@@ -1,3 +1,3 @@
 #!/bin/bash
 
-atlantis run ./atlantis_calibration.yaml /ocean/rlovindeer/MOAD/analysis-raisha/SSmodel_outputs/Tests/calibration_PS_flo2_mumPL13_KIadj_KLYSadj
+atlantis run ./atlantis_calibration_RL.yaml /ocean/rlovindeer/MOAD/analysis-raisha/SSmodel_outputs/Tests/v6719_50y_RL_mixdeep-25-2
