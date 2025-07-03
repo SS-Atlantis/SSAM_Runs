@@ -8,7 +8,7 @@ verbose       	    0   # Detailed logged output
 check_dups    	    0   # click 1 to check for duplicated params
 flag_replicated_old 0   # Whether reproducing old code quirks
 flag_replicated_old_PPmort 1
-flag_mig_in_bioindx 1   # Writes total biomass (across every MIGID entry) from migration array into biomindx.txt
+flag_mig_in_bioindx 0   # Writes total biomass (across every MIGID entry) from migration array into biomindx.txt
 flagecon_on         0   # Flag showing whether want economics loaded and submodel run (1) or not (0)
 flag_fisheries_on   1   # Flag showing whether want fisheries loaded and submodel run (1) or not (0)
 flag_skip_biol      0   # Flag showing whether want biological model; If 1 the Ecology submodel is not loaded only for debugging!
@@ -30,12 +30,12 @@ flag_old_embryo_init        0
 flag_replicate_old_calendar 0
 external_populations        0
 flag_multiyr_migs           1
-flag_mig_in_bioindx         1
+flag_mig_in_bioindx         0
 store_aggregate_yoy         1
 store_mig_array             1
 
 checkbox      265         # Give detailed logged output for this box
-checkstart    0 day     # Start detailed logged output after this date
+checkstart    35000000000 day     # Start detailed logged output after this date
 checkstop     35000000000 day
 fishtest      0        # Count up total population for each vertebrate after each main subroutine: 0=no, 1=yes
 flaggape      0        # Periodically list prey vs gape statistics (tuning diagnostic)
@@ -66,13 +66,13 @@ tburnday      0
 
 title      SalishSea model run
 dt         12 hour    # 12 hour time step
-tstop      90 day   # Stop time after the given period (1822 = 5; 3650=10; 5475=15; 7300=20, 12775 = 35, 18250 = 50)
-toutstart  0 day   # Output start time
-toutinc    0.5 day    # Write output with this periodicity: 1yr run = 1 day; 5 year = 30; 20 year = 91 days
-toutfinc   365 day     # Write fisheries output with this periodicity
+tstop      10220 day   # Stop time after the given period (1822 = 5; 3650=10; 5475=15; 7300=20, 12775 = 35, 18250 = 50)
+toutstart  9855 day   # Output start time #year 2019 (9855-10220), year 2020 (10220-10585), year 2021 (10585-10950)
+toutinc    1 day    # Write output with this periodicity: 1yr run = 1 day; 5 year = 30; 20 year = 91 days
+toutfinc   15 day     # Write fisheries output with this periodicity
 
 tsumout    365 day     # Write stock state summary with this periodicity; migration debug
-fishout    0          # Switch to turn fisheries output on = 1, off = 0
+fishout    1          # Switch to turn fisheries output on = 1, off = 0
 flagreusefile 2        # Switch to show want to append output file no = 0, yes = 1, replace = 2
 flagannual_Mest 0      # Write out mortality per predator annually (1) or not (0) #
 
