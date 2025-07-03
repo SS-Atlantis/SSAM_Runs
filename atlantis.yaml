@@ -1,7 +1,7 @@
 run id: SS-Atlantis
 
 paths:
-  atlantis code: /ocean/$USER/Atlantis/atlantis-trunk/atlantis_v6718
+  atlantis code: /ocean/$USER/Atlantis/atlantis-trunk/AtlantisTrunk
   atlantis executable name: atlantisMerged
   runs directory: /ocean/$USER/Atlantis/SSAM_Runs/
   atlantis command: $HOME/conda_envs/atlantis-cmd/bin/atlantis
@@ -10,7 +10,7 @@ paths:
 # global attributes of the initial conditions file.
 boxes: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_xy.bgm
 
-initial conditions: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_init_contam.nc
+initial conditions: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_init_NO_Si.nc
 
 groups: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_grps.csv
 
@@ -23,9 +23,9 @@ parameters:
   # and they must be identified by those exact keys.
   run: /ocean/$USER/Atlantis/SSAM_Runs/SS_run_control.prm #change these to control
   forcing: /ocean/$USER/Atlantis/SSAM_Runs/SS_forcing_control.prm # change these to control
-  physics: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_physics.prm
-  biology: /ocean/$USER/Atlantis/salish-sea-atlantis-model/00SS_biology_20240411.prm
-  harvest: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_harvest_closures.prm
+  physics: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_physics_RL.prm
+  biology: /ocean/$USER/Atlantis/salish-sea-atlantis-model/00SS_biology_20250703.prm
+  harvest: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_harvest.prm
 
 forcing:
   # The keys must match the forcing file names in the forcing.prm file.
@@ -45,7 +45,7 @@ forcing:
   contaminants03.nc:
     link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/ForcingFiles/SSAM_Scenario_6a_2020-07-21.nc
   contaminants04.nc:
-    link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/contam_SSAtlantis_dummy.nc
+    link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/contam_SSAtlantis_dummy_smallnum.nc
     
 output filename base: outputSalishSea
 

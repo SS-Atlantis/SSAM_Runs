@@ -67,14 +67,14 @@ tburnday      0
 title      SalishSea model run
 dt         12 hour     # 12 hour time step
 tstop      18250 day   # Stop time after the given period (1822 = 5; 3650=10; 5475=15; 7300=20, 12775 = 35, 18250 = 50)
-toutstart  5475 day    # Output start time (after 15 y burn-in)
+toutstart  0 day    # Output start time (after 15 y burn-in)
 toutinc    90 day      # Write output with this periodicity: 1yr run = 1 day; 5 year = 30; 20 year = 91 days
 toutfinc   365 day     # Write fisheries output with this periodicity
 
 tsumout    365 day     # Write stock state summary with this periodicity; migration debug
-fishout    0          # Switch to turn fisheries output on = 1, off = 0
+fishout    1          # Switch to turn fisheries output on = 1, off = 0
 flagreusefile 2        # Switch to show want to append output file no = 0, yes = 1, replace = 2
-flagannual_Mest 1      # Write out mortality per predator annually (1) or not (0) #
+flagannual_Mest 0      # Write out mortality per predator annually (1) or not (0) #
 
 # Parameters defining the numbers of certain types of groups (needed to  parameter arrays in the
 # initialisation section of the model, best left untouched for now)
