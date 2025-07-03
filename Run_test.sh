@@ -1,3 +1,3 @@
 #!/bin/bash
 
-atlantis run ./atlantis_year1.yaml /ocean/rlovindeer/MOAD/analysis-raisha/SSmodel_outputs/Tests/Test_Scenario_5b_v6699_20_zoop_uptake 
+atlantis run ./atlantis_calibration_RL.yaml /ocean/rlovindeer/MOAD/analysis-raisha/SSmodel_outputs/Tests/v6719_50y_VBITBUCKET-ddmove0-2-ZGppreyWS-1-PL-fishing
