@@ -66,10 +66,10 @@ tburnday      0
 
 title      SalishSea model run
 dt         12 hour    # 12 hour time step
-tstop      10220 day   # Stop time after the given period (1822 = 5; 3650=10; 5475=15; 7300=20, 12775 = 35, 18250 = 50)
-toutstart  9855 day   # Output start time #year 2019 (9855-10220), year 2020 (10220-10585), year 2021 (10585-10950)
-toutinc    1 day    # Write output with this periodicity: 1yr run = 1 day; 5 year = 30; 20 year = 91 days
-toutfinc   15 day     # Write fisheries output with this periodicity
+tstop      18250 day   # Stop time after the given period (1822 = 5; 3650=10; 5475=15; 7300=20, 12775 = 35, 18250 = 50)
+toutstart  17155 day   # Output start time year 2019-2022 (9855-10950), year 2024-2029 (10220-10585), year 2021 (10585-10950)
+toutinc    3 day    # Write output with this periodicity: 1yr run = 1 day; 5 year = 30; 20 year = 91 days
+toutfinc   365 day     # Write fisheries output with this periodicity
 
 tsumout    365 day     # Write stock state summary with this periodicity; migration debug
 fishout    1          # Switch to turn fisheries output on = 1, off = 0
