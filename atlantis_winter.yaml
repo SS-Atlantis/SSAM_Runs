@@ -41,9 +41,9 @@ forcing:
   contaminants01.nc:
     link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/contam_SSAtlantis_year_of_zero2.nc
   contaminants02.nc:
-    link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/contam_SSAtlantis_year_of_zero2.nc #SSAM_Scenario_5b_2019-01-20_10000_alkyls.nc
+    link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/SSAM_Scenario_5b_2019-01-20_10000_alkyls.nc
   contaminants03.nc:
-    link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/contam_SSAtlantis_year_of_zero2.nc #contam_SSAtlantis_dummy_smallnum.nc
+    link to: /ocean/$USER/MOAD/analysis-raisha/notebooks/contaminant-dispersal/results/contam_SSAtlantis_dummy_smallnum.nc
     
 output filename base: outputSalishSea
 
