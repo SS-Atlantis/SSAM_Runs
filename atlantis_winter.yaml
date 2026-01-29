@@ -25,7 +25,7 @@ parameters:
   forcing: /ocean/$USER/Atlantis/SSAM_Runs/SS_forcing_contam_2019-01.prm # change these to control
   physics: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_physics_RL.prm
   biology: /ocean/$USER/Atlantis/salish-sea-atlantis-model/00SS_biology_20250703.prm
-  harvest: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_harvest_closure.prm
+  harvest: /ocean/$USER/Atlantis/salish-sea-atlantis-model/SS_harvest_closures.prm
 
 forcing:
   # The keys must match the forcing file names in the forcing.prm file.
