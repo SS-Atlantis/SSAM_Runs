@@ -8309,20 +8309,20 @@ mL3_SG_T15 0   Linear mortality of seagrass epiphytes, 15 deg C d-1
 # Linear mortality biomass groups calculated as a weighted average rate as usual
 PL_mL        0.0000002        #Linear mortality rate of lg phytopl, 15 deg C     d-1              0.14
 PS_mL        0.0001       #Linear mortality rate of picophytopl, 15 deg C    d-1              0.14
-MA_mL        0.0005       #Linear mortality rate of macroalgae, 15 deg C     d-1              0.002 - 0.04
+MA_mL        0.005       #Linear mortality rate of macroalgae, 15 deg C     d-1              0.002 - 0.04
 SG_mL        0.002        #Linear mortality rate of seagrass, 15 deg C       d-1              0.001 - 0.01
 ZG_mL        0.00455
 ZL_mL        0.0       #Linear mortality rate of large zoopl, 15 deg C    d-1 (0.001)      0.0 - 0.04
 ZM_mL        0.015        #Linear mortality rate of meso-zoopl, 15 deg C     d-1 (0.001)      0.0 - 0.09
 ZS_mL        0.15
-BFF_mL       0.0000005     #Linear mortality rate of shallow ff, 15 deg C     d-1 (0.000001)   0.0 -  0.001
-BIV_mL       0.0000015     #Linear mortality rate of deep filt feed, 15 deg C d-1 (0.000001)   0.0 -  0.001
+BFF_mL       0.0005     #Linear mortality rate of shallow ff, 15 deg C     d-1 (0.000001)   0.0 -  0.001
+BIV_mL       0.0015     #Linear mortality rate of deep filt feed, 15 deg C d-1 (0.000001)   0.0 -  0.001
 BD_mL        0.0005        #Linear mortality rate of deposit feeder, 15 deg C d-1 (0.0005)     0.0 -  0.001
 BC_mL 5e-05
 BG_mL        0.0000025   #Linear mortality rate of herbiv grazer, 15 deg C  d-1 (0.0005)     0.0 - 0.001
 BRL_mL 6.5e-05
 DCR_mL       0.005       #Linear mort rate of crabs, 15 deg C d-1 (0.00037)    0.0 - 0.002
-BMD_mL       0.00000005     #Linear mort. rate of deep macrozooben.,  15 deg C d-1 (0.0001)     0.0 - 0.002
+BMD_mL       0.005     #Linear mort. rate of deep macrozooben.,  15 deg C d-1 (0.0001)     0.0 - 0.002
 BO_mL        0.0000005        #Linear mortality rate of meiobenthos, 15 deg C    d-1 (0.0082)     0.0 - 0.01
 PB_mL        0.0          #Linear mortality rate of pelagic bact, 15 deg C   d-1              0.0 - 0.1
 BB_mL        0.0         #Linear mortality rate of sediment bact, 15 deg C  d-1 (0.0001)     0.0 - 0.1
@@ -12134,19 +12134,19 @@ PHR_Benzo_uptake_rate 8.0e-07
 ORR_Benzo_uptake_rate 8.0e-07
 ORT_Benzo_uptake_rate 8.0e-07
 WHB_Benzo_uptake_rate 8.0e-07
-BRL_Benzo_uptake_rate 1
-DCR_Benzo_uptake_rate 1
-BIV_Benzo_uptake_rate 1
+BRL_Benzo_uptake_rate 8.0e-06
+DCR_Benzo_uptake_rate 8.0e-06
+BIV_Benzo_uptake_rate 8.0e-05
 CEP_Benzo_uptake_rate 8.0e-06
-BFF_Benzo_uptake_rate 1
-SPH_Benzo_uptake_rate 1
+BFF_Benzo_uptake_rate 8.0e-05
+SPH_Benzo_uptake_rate 8.0e-06
 BG_Benzo_uptake_rate 8.0e-06
-BMD_Benzo_uptake_rate 1
-PWN_Benzo_uptake_rate 1
+BMD_Benzo_uptake_rate 8.0e-06
+PWN_Benzo_uptake_rate 8.0e-06
 BD_Benzo_uptake_rate 8.0e-06
 BC_Benzo_uptake_rate 8.0e-06
-MA_Benzo_uptake_rate 1
-SG_Benzo_uptake_rate 1
+MA_Benzo_uptake_rate 8.0e-05
+SG_Benzo_uptake_rate 8.0e-05
 ZG_Benzo_uptake_rate 8.0e-06
 PL_Benzo_uptake_rate 8.0e-05
 PS_Benzo_uptake_rate 8.0e-05
@@ -12578,25 +12578,25 @@ SHD_Benzo_InstantDoseMortality 0.08
 SHS_Benzo_InstantDoseMortality 0.08
 SRA_Benzo_InstantDoseMortality 0.08
 SSK_Benzo_InstantDoseMortality 0.08
-SB_Benzo_InstantDoseMortality 1e-8
-SP_Benzo_InstantDoseMortality 1e-8
+SB_Benzo_InstantDoseMortality 0.99
+SP_Benzo_InstantDoseMortality 0.99
 CSL_Benzo_InstantDoseMortality 0.08
 HSL_Benzo_InstantDoseMortality 0.08
 PHR_Benzo_InstantDoseMortality 0.08
 ORR_Benzo_InstantDoseMortality 0.08
 ORT_Benzo_InstantDoseMortality 0.08
 WHB_Benzo_InstantDoseMortality 0.08
-BRL_Benzo_InstantDoseMortality 1e-15
-DCR_Benzo_InstantDoseMortality 1e-15
-BIV_Benzo_InstantDoseMortality 1e-15
+BRL_Benzo_InstantDoseMortality 0.90
+DCR_Benzo_InstantDoseMortality 0.90
+BIV_Benzo_InstantDoseMortality 0.99
 CEP_Benzo_InstantDoseMortality 0.08
-BFF_Benzo_InstantDoseMortality 1e-15
-SPH_Benzo_InstantDoseMortality 1e-15
-BG_Benzo_InstantDoseMortality 0.08
+BFF_Benzo_InstantDoseMortality 0.99
+SPH_Benzo_InstantDoseMortality 0.99
+BG_Benzo_InstantDoseMortality 0.99
 BMD_Benzo_InstantDoseMortality 0.08
 PWN_Benzo_InstantDoseMortality 0.08
-BD_Benzo_InstantDoseMortality 1e-15
-BC_Benzo_InstantDoseMortality 1e-15
+BD_Benzo_InstantDoseMortality 0.99
+BC_Benzo_InstantDoseMortality 0.99
 MA_Benzo_InstantDoseMortality 0.08
 SG_Benzo_InstantDoseMortality 0.08
 ZG_Benzo_InstantDoseMortality 0.08
@@ -12805,27 +12805,27 @@ SHD_Benzo_TimeToLD50 345600
 SHS_Benzo_TimeToLD50 345600
 SRA_Benzo_TimeToLD50 345600
 SSK_Benzo_TimeToLD50 345600
-SB_Benzo_TimeToLD50 345600
-SP_Benzo_TimeToLD50 345600
+SB_Benzo_TimeToLD50 34560
+SP_Benzo_TimeToLD50 34560
 CSL_Benzo_TimeToLD50 345600
 HSL_Benzo_TimeToLD50 345600
 PHR_Benzo_TimeToLD50 345600
 ORR_Benzo_TimeToLD50 345600
 ORT_Benzo_TimeToLD50 345600
 WHB_Benzo_TimeToLD50 345600
-BRL_Benzo_TimeToLD50 345600
-DCR_Benzo_TimeToLD50 345600
-BIV_Benzo_TimeToLD50 345600
+BRL_Benzo_TimeToLD50 34560
+DCR_Benzo_TimeToLD50 34560
+BIV_Benzo_TimeToLD50 34560
 CEP_Benzo_TimeToLD50 345600
-BFF_Benzo_TimeToLD50 345600
-SPH_Benzo_TimeToLD50 345600
-BG_Benzo_TimeToLD50 345600
-BMD_Benzo_TimeToLD50 345600
+BFF_Benzo_TimeToLD50 34560
+SPH_Benzo_TimeToLD50 34560
+BG_Benzo_TimeToLD50 34560
+BMD_Benzo_TimeToLD50 34560
 PWN_Benzo_TimeToLD50 345600
-BD_Benzo_TimeToLD50 345600
-BC_Benzo_TimeToLD50 345600
-MA_Benzo_TimeToLD50 345600
-SG_Benzo_TimeToLD50 345600
+BD_Benzo_TimeToLD50 34560
+BC_Benzo_TimeToLD50 34560
+MA_Benzo_TimeToLD50 34560
+SG_Benzo_TimeToLD50 34560
 ZG_Benzo_TimeToLD50 34560
 PL_Benzo_TimeToLD50 34560
 PS_Benzo_TimeToLD50 34560
@@ -13033,27 +13033,27 @@ SHD_Benzo_LD50 14.1
 SHS_Benzo_LD50 14.1
 SRA_Benzo_LD50 14.1
 SSK_Benzo_LD50 14.1
-SB_Benzo_LD50 14.1
-SP_Benzo_LD50 14.1
+SB_Benzo_LD50 0.0000001
+SP_Benzo_LD50 0.0000001
 CSL_Benzo_LD50 14.1
 HSL_Benzo_LD50 14.1
 PHR_Benzo_LD50 14.1
 ORR_Benzo_LD50 14.1
 ORT_Benzo_LD50 14.1
 WHB_Benzo_LD50 14.1
-BRL_Benzo_LD50 6.1
-DCR_Benzo_LD50 6.1
-BIV_Benzo_LD50 6.1
+BRL_Benzo_LD50 0.0000001
+DCR_Benzo_LD50 0.0000001
+BIV_Benzo_LD50 0.0000001
 CEP_Benzo_LD50 14.1
-BFF_Benzo_LD50 6.1
-SPH_Benzo_LD50 6.1
-BG_Benzo_LD50 14.1
-BMD_Benzo_LD50 6.1
+BFF_Benzo_LD50 0.0000001
+SPH_Benzo_LD50 0.0000001
+BG_Benzo_LD50 0.0000001
+BMD_Benzo_LD50 0.0000001
 PWN_Benzo_LD50 6.1
-BD_Benzo_LD50 6.1
-BC_Benzo_LD50 6.1
-MA_Benzo_LD50 10
-SG_Benzo_LD50 10
+BD_Benzo_LD50 0.0000001
+BC_Benzo_LD50 0.0000001
+MA_Benzo_LD50 0.00001
+SG_Benzo_LD50 0.00001
 ZG_Benzo_LD50 7.25
 PL_Benzo_LD50 10
 PS_Benzo_LD50 10
@@ -13485,27 +13485,27 @@ SHD_Benzo_LDChronic 29
 SHS_Benzo_LDChronic 29
 SRA_Benzo_LDChronic 29
 SSK_Benzo_LDChronic 29
-SB_Benzo_LDChronic 29
-SP_Benzo_LDChronic 29
+SB_Benzo_LDChronic 1.627
+SP_Benzo_LDChronic 1.627
 CSL_Benzo_LDChronic 29
 HSL_Benzo_LDChronic 29
 PHR_Benzo_LDChronic 29
 ORR_Benzo_LDChronic 29
 ORT_Benzo_LDChronic 29
 WHB_Benzo_LDChronic 7
-BRL_Benzo_LDChronic 27.91
-DCR_Benzo_LDChronic 27.91
+BRL_Benzo_LDChronic 1.627
+DCR_Benzo_LDChronic 1.627
 BIV_Benzo_LDChronic 1.627
 CEP_Benzo_LDChronic 29
-BFF_Benzo_LDChronic 29
+BFF_Benzo_LDChronic 1.627
 SPH_Benzo_LDChronic 1
-BG_Benzo_LDChronic 29
-BMD_Benzo_LDChronic 29
+BG_Benzo_LDChronic 1.627
+BMD_Benzo_LDChronic 1.627
 PWN_Benzo_LDChronic 22.8
 BD_Benzo_LDChronic 29
 BC_Benzo_LDChronic 29
-MA_Benzo_LDChronic 29
-SG_Benzo_LDChronic 29
+MA_Benzo_LDChronic 1.627
+SG_Benzo_LDChronic 1.627
 ZG_Benzo_LDChronic 12.5
 PL_Benzo_LDChronic 12.5
 PS_Benzo_LDChronic 12.5
